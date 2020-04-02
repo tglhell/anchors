@@ -1,6 +1,5 @@
 jQuery.event.add(window, 'load', function () {
-	var winW = $(window).outerHeight(),
-	winH = $(window).height(),
+	var winH = $(window).height(),
 	footH = $('.footer').outerHeight(),
 	irSecM = $('body').css('font-weight') / 4,
 	irSec = irSecM * 3,
@@ -16,11 +15,10 @@ jQuery.event.add(window, 'load', function () {
 		}(i));
 	}
 
-	console.log(mainIrListW);
-
-	$(window).resize(function(){
-		if (winW < mainIrListW) {
-
-		}
-	});
+	// $(window).resize(function(){
+	// 	var winW = $(window).outerWidth();
+	// 	if (winW < mainIrListW) {
+	// 		mainIrWrap.find('.main-ir-list').css('width', winW - irSecM);
+	// 	}
+	// });
 });
