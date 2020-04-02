@@ -14,14 +14,14 @@ $(function(){
 		$(function (i){
 			setTimeout(function () {
 				ServiceLi.eq(i).addClass('on');
-			}, i * 700);
+			}, i * 500);
 		}(i));
 	}
 	setTimeout(function(){
 		if ($('.service-list li').hasClass('on')) {
 		 $('.service-list li').addClass('cursor');
 		}
-	}, ServiceLen*700)
+	}, ServiceLen*500+200)
 
 
 	function alignPos (){
