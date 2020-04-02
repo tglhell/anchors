@@ -1,2 +1,0 @@
-# anchors
-anchors_html
