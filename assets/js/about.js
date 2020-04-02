@@ -5,28 +5,32 @@ $(function(){
 	wrapBoxLeng = wrapBox.length;
 	ServiceLi = $('.service-list li');
 	ServiceLen = ServiceLi.length;
+	servicePos = $('.service-cont').offset().top;
 
 	$(window).scroll(function (e) {
 		alignPos ();
+		if(scrPos >= servicePos - 500) {
+			service();
+		}
 	});
 
-	for (i = 0; i <= ServiceLen; i++) {
-		$(function (i){
-			setTimeout(function () {
-				ServiceLi.eq(i).addClass('on');
-			}, i * 500);
-		}(i));
-	}
-	setTimeout(function(){
-		if ($('.service-list li').hasClass('on')) {
-		 $('.service-list li').addClass('cursor');
+	function service () {
+		for (i = 0; i <= ServiceLen; i++) {
+			$(function (i) {
+				setTimeout(function () {
+					ServiceLi.eq(i).addClass('on');
+				}, i * 600);
+			}(i));
 		}
-	}, ServiceLen*500+200)
-
+		setTimeout(function () {
+			if ($('.service-list li').hasClass('on')) {
+				$('.service-list li').addClass('cursor');
+			}
+		}, ServiceLen * 600 + 300);
+	}
 
 	function alignPos (){
 		scrPos = $(this).scrollTop();
-		
 		for (var i = 0; i < wrapBoxLeng; i++) {
 			var thisPos = wrapBox.eq(i).offset().top;
 			posArr.push(thisPos);
