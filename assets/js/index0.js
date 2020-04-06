@@ -1,7 +1,7 @@
 jQuery.event.add(window, 'load', function () {
 	var mIrList = $('.main-ir-list'),
 	mStepNavi = $('.main-step-navi li'),
-	irBox = setTimeout,
+	irBox = setTimeout, iCnt = 6,
 	mLogoOuter = $('.main-logo-outer');
 	mainHeight ();
 	
@@ -9,12 +9,12 @@ jQuery.event.add(window, 'load', function () {
 		mainHeight ();
 	});
 	
-	for (i = 1; i < 7; i++) {
+	for (i = 1; i < iCnt + 1; i++) {
 		$(function (i) {
 			irBox(function () {
 				mIrList.attr('ir-intro', i);
 				mStepNavi.eq(i - 1).addClass('on').siblings().removeClass('on');
-				if (i == 6) {
+				if (i == iCnt) {
 					lPhase ();
 				}
 			}, 1500 * i);
@@ -29,7 +29,7 @@ jQuery.event.add(window, 'load', function () {
 			mLogoOuter.removeClass('l-phase');
 			_this.addClass('on').siblings().removeClass('on');
 			mIrList.attr('ir-intro', stepIdx);
-			if (stepIdx == 6) {
+			if (stepIdx == iCnt) {
 				lPhase ();
 			}
 		}
