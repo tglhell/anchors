@@ -141,7 +141,7 @@
 [ir-intro="4"] li:nth-child(4) .main-ir-item .s-center:after {width:45%;}
 [ir-intro="4"] li:nth-child(4) .main-ir-item .s-right:after {top:20px;left:-60px;width:25px;background:#00c8ff;}
 
-[ir-intro="5"]:before {transition-delay:.4s;background-image:url(/anchors/assets/images/index/step/bg_main_phase01.jpg);}
+[ir-intro="5"]:before {transition-delay:.4s;background-image:url(/anchors/assets/images/index/step/bg_main_phase05.jpg);}
 [ir-intro="5"] li:nth-child(1) .main-ir-item .s-left {width:15%;}
 [ir-intro="5"] li:nth-child(1) .main-ir-item .s-right {width:15%;}
 [ir-intro="5"] li:nth-child(2) .main-ir-item .s-left {width:35%;}
@@ -156,16 +156,16 @@
 .main-ir-list li:nth-child(3) .main-ir-item .s-right em:before {top:70px;}
 .main-ir-list li:nth-child(3) .main-ir-item .s-right em:after {top:105px;}
 
-[ir-intro="1"] li:nth-child(3) .main-ir-item .s-right em:before,
-[ir-intro="5"] li:nth-child(3) .main-ir-item .s-right em:before {content:'GENESIS PROJECT1';}
-[ir-intro="1"] li:nth-child(3) .main-ir-item .s-right em:after,
-[ir-intro="5"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Description1';}
+[ir-intro="1"] li:nth-child(3) .main-ir-item .s-right em:before {content:'GENESIS PROJECT1';}
+[ir-intro="1"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Description1';}
 [ir-intro="2"] li:nth-child(3) .main-ir-item .s-right em:before {content:'GENESIS PROJECT2';}
 [ir-intro="2"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Description2';}
 [ir-intro="3"] li:nth-child(3) .main-ir-item .s-right em:before {content:'GENESIS PROJECT3';}
 [ir-intro="3"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Description3';}
 [ir-intro="4"] li:nth-child(3) .main-ir-item .s-right em:before {content:'GENESIS PROJECT4';}
 [ir-intro="4"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Description4';}
+[ir-intro="5"] li:nth-child(3) .main-ir-item .s-right em:before {content:'GENESIS PROJECT5';}
+[ir-intro="5"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Description5';}
 
 [ir-intro="5"] {animation:next-phase 3s ease-in-out;opacity:0;height:0;}
 
