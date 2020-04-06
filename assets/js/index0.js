@@ -43,6 +43,6 @@ jQuery.event.add(window, 'load', function () {
 	function lPhase () {
 		irBox(function () {
 			mLogoOuter.addClass('l-phase');
-		}, 2200);
+		}, 1000);
 	}
 });
