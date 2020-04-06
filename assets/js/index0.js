@@ -21,7 +21,7 @@ jQuery.event.add(window, 'load', function () {
 		}(i));
 	}
 
-	mStepNavi.click(function(e){
+	mStepNavi.click(function(){
 		var _this = $(this),
 		stepIdx = _this.index() + 1;
 		if (!mStepNavi.is(':animated')) {
