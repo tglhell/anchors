@@ -151,6 +151,16 @@
 [ir-intro="5"] li:nth-child(4) .main-ir-item .s-left {width:10%;}
 [ir-intro="5"] li:nth-child(4) .main-ir-item .s-right {width:77%;}
 
+[ir-intro="6"]:before {transition-delay:.4s;background-image:url(/anchors/assets/images/index/step/bg_main_phase01.jpg);}
+[ir-intro="6"] li:nth-child(1) .main-ir-item .s-left {width:15%;}
+[ir-intro="6"] li:nth-child(1) .main-ir-item .s-right {width:15%;}
+[ir-intro="6"] li:nth-child(2) .main-ir-item .s-left {width:35%;}
+[ir-intro="6"] li:nth-child(2) .main-ir-item .s-right {width:37%;}
+[ir-intro="6"] li:nth-child(3) .main-ir-item .s-left {width:21%;}
+[ir-intro="6"] li:nth-child(3) .main-ir-item .s-right {width:32%;}
+[ir-intro="6"] li:nth-child(4) .main-ir-item .s-left {width:10%;}
+[ir-intro="6"] li:nth-child(4) .main-ir-item .s-right {width:77%;}
+
 .main-ir-list li:nth-child(3) .main-ir-item .s-right em:before {content:'GENESIS PROJECT';position:absolute;top:100px;left:20px;opacity:1;z-index:10;font-size:24px;font-weight:700;color:#00c8ff;line-height:32px;letter-spacing:-1px;white-space:nowrap;}
 .main-ir-list li:nth-child(3) .main-ir-item .s-right em:after {content:'Description text';position:absolute;top:135px;left:20px;opacity:1;z-index:10;font-size:14px;font-weight:400;color:#00c8ff;line-height:20px;letter-spacing:-1px;}
 .main-ir-list li:nth-child(3) .main-ir-item .s-right em:before {top:70px;}
@@ -166,10 +176,12 @@
 [ir-intro="4"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Description4';}
 [ir-intro="5"] li:nth-child(3) .main-ir-item .s-right em:before {content:'GENESIS PROJECT5';}
 [ir-intro="5"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Description5';}
+[ir-intro="6"] li:nth-child(3) .main-ir-item .s-right em:before {content:'';}
+[ir-intro="6"] li:nth-child(3) .main-ir-item .s-right em:after {content:'';}
 
-[ir-intro="5"] {animation:next-phase 3s ease-in-out;opacity:0;height:0;}
+[ir-intro="6"] {animation:next-phase 3s ease-in-out;opacity:0;height:0;}
 
-.main-step-navi {position:fixed;top:50%;right:-100px;z-index:11;opacity:0;margin-top:-105px;}
+.main-step-navi {position:fixed;top:50%;right:-100px;z-index:11;opacity:0;margin-top:-125px;}
 [ir-idx="2"] .main-step-navi {transition-delay:2s;right:70px;opacity:1;}
 .main-step-navi li {position:relative;width:2px;height:30px;margin:10px 0;padding:0 15px;font-size:0;color:#080058;cursor:pointer;}
 .main-step-navi li:before {content:'';position:absolute;top:0;bottom:0;left:50%;width:2px;background:#fff;}

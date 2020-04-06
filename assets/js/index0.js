@@ -9,12 +9,12 @@ jQuery.event.add(window, 'load', function () {
 		mainHeight ();
 	});
 	
-	for (i = 1; i < 6; i++) {
+	for (i = 1; i < 7; i++) {
 		$(function (i) {
 			irBox(function () {
 				mIrList.attr('ir-intro', i);
 				mStepNavi.eq(i - 1).addClass('on').siblings().removeClass('on');
-				if (i == 5) {
+				if (i == 6) {
 					lPhase ();
 				}
 			}, 1500 * i);
@@ -24,11 +24,14 @@ jQuery.event.add(window, 'load', function () {
 	mStepNavi.click(function(e){
 		var _this = $(this),
 		stepIdx = _this.index() + 1;
-		mLogoOuter.removeClass('l-phase');
-		_this.addClass('on').siblings().removeClass('on');
-		mIrList.attr('ir-intro', stepIdx);
-		if (stepIdx == 5) {
-			lPhase ();
+		if (!mStepNavi.is(':animated')) {
+			_this.stop().animate({ 'overflow': 'visible' }, 1000);
+			mLogoOuter.removeClass('l-phase');
+			_this.addClass('on').siblings().removeClass('on');
+			mIrList.attr('ir-intro', stepIdx);
+			if (stepIdx == 6) {
+				lPhase ();
+			}
 		}
 	});
 
