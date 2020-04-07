@@ -170,7 +170,7 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, dl, dd, figure, form, field
 html, body {
 	font-family:'notoSans', Malgun Gothic, Apple-Gothic, Tahoma, Helvetica, sans-serif;
 	font-size:14px;
-	line-height:20px;
+	line-height:1.2;
 	color:#444;
 	letter-spacing:-0.5px;
 	-ms-overflow-style: none; /* IE and Edge */
@@ -285,21 +285,30 @@ caption {
 [ir-group-idx] li.active {opacity:1;-webkit-transform:translateY(0);transform:translateY(0);}
 
 /* button */
-.btn-box {margin-top:40px;font-size:0;}
-.btn-box .btn {margin-top:0;}
-.btn-box .btn + .btn {margin-left:10px;}
-.btn {position:relative;margin-top:40px;border:1px solid #bbb;}
-.btn span {display:block;padding:8px 60px;font-size:12px;color:#999;line-height:18px;}
-.btn:before {content:'';position:absolute;top:0;bottom:0;left:0;z-index:-1;right:100%;opacity:0;background:#999;}
-.btn:hover {border-color:#999;}
-.btn:hover span {color:#fff;text-shadow:0 2px 2px rgba(0,0,0,.2);}
-.btn:hover:before {right:0;opacity:1;}
+.btn-box {margin-top:40px;font-size:0;text-align:center;}
+.btn {position:relative;}
+.btn:before {transition:.5s;content:'';position:absolute;top:-20px;bottom:0;left:-20px;right:0;z-index:-1;height:0;background:url(/anchors/assets/images/common/bg_hover_line.png)no-repeat center;background-position-y: 6px;}
+.btn:hover:before {transition:.5s;height:66px;}
+.btn span {position:relative;padding:0 12px;background:#fff;color:#070057;font-size:18px;font-weight:700;line-height:32px;}
+.btn span:before,
+.btn span:after {position:absolute;top:4px;width:3px;height:18px;background:#070057;content:'';}
+.btn span:before {left:0;}
+.btn span:after {right:0;}
 
 /* input */
-.inp-text {padding:2px 5px;border:1px solid #444;font-size:12px;line-height:20px;vertical-align:middle;}
-.inp-text::-webkit-input-placeholder {color:#999;}
-.inp-text::placeholder {color:#999;}
-.inp-text:-ms-input-placeholder {color:#999;}
+.inp-text {width:100%;height:60px;padding:0 18px;background:#f4f4f4;color:#555;font-size:15px;border:none;vertical-align:middle;line-height:60px;}
+.inp-text::-webkit-input-placeholder {color:#898989;font-size:15px;}
+.inp-text::placeholder {color:#898989;font-size:15px;}
+.inp-text:-ms-input-placeholder {color:#898989;font-size:15px;}
+
+/* checkbox */
+.checkbox-list {overflow:hidden;}
+.checkbox-list li {float:left;width:25%;}
+.checkbox input[type="checkbox"] {-webkit-appearance:none;-moz-appearance:none;-o-appearance:none;appearance:none;}
+.checkbox label{position:relative;display:inline-block;height:22px;font-size:16px;color:#000;padding-left:30px;line-height:22px;}
+.checkbox label:before {position:absolute;top:0;left:0;width:22px;height:22px;background:url(/anchors/assets/images/common/ico_checkbox.png) no-repeat;background-size:22px;content:'';}
+.checkbox label:after {position:absolute;bottom:1px;left:1px;width:20px;height:20px;background:#fff;content:'';transition:0.3s;}
+.checkbox input[type="checkbox"]:checked+label:after {height:0;}
 
 /* fixed area */
 .btm-copyright {position:fixed;bottom:50px;left:70px;width:10px;height:273px;z-index:20;font-size:0;background:url(/anchors/assets/images/common/img_side_copyright.png) no-repeat;}
@@ -389,6 +398,8 @@ caption {
 .nav.on .menu li:nth-child(2) {transition-delay:.7s;}
 .nav.on .menu li:nth-child(3) {transition-delay:1s;}
 .nav.on .menu li:nth-child(4) {transition-delay:1.3s;}
+
+.cont-tit {margin-bottom:60px;font-size:35px;color:#070057;line-height:40px;} 
 
 /* layerPopup */
 .layerPopupWrap {position:fixed;top:0;bottom:0;left:0;right:0;z-index:999;display:none;width:100%;height:100%;background:rgba(0,0,0,.5);transition:none;}

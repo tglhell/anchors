@@ -1,8 +1,5 @@
 $(function(){
-	var winH = $(window).height(),
-	footH = $('.footer').outerHeight(),
-	careerList = $('.career-list');
-	careerList.outerHeight(winH - footH);
+	var careerList = $('.career-list');
 
 	careerList.on('click',function(){
 		var _this = $(this);
@@ -14,5 +11,19 @@ $(function(){
 				_this.removeClass('on').siblings().removeClass('off'); 
 			}
 		}
+	});
+
+
+	var fileTarget = $('.upload');
+	fileTarget.on('change', function () {
+		if (window.FileReader) {
+			// 파일명 추출
+			var filename = $(this)[0].files[0].name;
+		}
+		else {
+			// Old IE 파일명 추출
+			var filename = $(this).val().split('/').pop().split('\\').pop();
+		};
+		$(this).siblings('.upload-name').val(filename);
 	});
 });
