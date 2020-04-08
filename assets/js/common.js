@@ -104,10 +104,12 @@ jQuery.event.add(window, 'load', function () {
 			$('.header').removeClass('scroll');
 		}
 
-		if (scrPos >= scrPosSum) {
-			$('.wrap').addClass('side-fixed');
-		} else {
-			$('.wrap').removeClass('side-fixed');
+		if ($('.main').length == 0) {
+			if (scrPos >= scrPosSum) {
+				$('.wrap').addClass('side-fixed');
+			} else {
+				$('.wrap').removeClass('side-fixed');
+			}
 		}
 	});
 
