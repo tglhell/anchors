@@ -306,7 +306,7 @@ caption {
 .checkbox-list {overflow:hidden;}
 .checkbox-list li {float:left;width:25%;}
 .checkbox input[type="checkbox"] {display:none;}
-.checkbox label{position:relative;display:inline-block;height:22px;font-size:16px;color:#000;padding-left:30px;line-height:22px;}
+.checkbox label{position:relative;display:inline-block;height:22px;font-size:16px;color:#555;padding-left:30px;line-height:22px;}
 .checkbox label:before {position:absolute;top:0;left:0;width:22px;height:22px;background:url(/anchors/assets/images/common/ico_checkbox.png) no-repeat;background-size:22px;content:'';}
 .checkbox label:after {position:absolute;bottom:1px;left:1px;width:20px;height:20px;background:#fff;content:'';transition:0.3s;}
 .checkbox input[type="checkbox"]:checked+label:after {height:0;}
@@ -400,7 +400,7 @@ caption {
 .nav.on .menu li:nth-child(3) {transition-delay:1s;}
 .nav.on .menu li:nth-child(4) {transition-delay:1.3s;}
 
-.cont-tit {margin-bottom:60px;font-size:45px;color:#070057;line-height:60px;} 
+.cont-tit {margin-bottom:70px;font-size:45px;color:#070057;line-height:60px;} 
 
 /* layerPopup */
 .layerPopupWrap {position:fixed;top:0;bottom:0;left:0;right:0;z-index:999;display:none;width:100%;height:100%;background:rgba(0,0,0,.5);transition:none;}
