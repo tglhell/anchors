@@ -2,9 +2,11 @@
 .main .header-cont {max-width:100%;padding:0 93px;background:#080058;}
 .main .nav {right:100px !important;}
 .main .nav.on {right:0 !important;}
-/* .main .nav.on:before {background:#00c8ff;}
-.main .nav .menu li a {background:#00c8ff;}
-.main .nav .menu li a:before {background: url(/anchors/assets/images/common/bg_hover_line2.png) no-repeat center top;} */
+.main .nav.on:before {background:#fff;}
+.main .nav .menu li a {background:#fff;color:#080058;}
+.main .nav .menu li a:before {background: url(/anchors/assets/images/common/bg_hover_line.png) no-repeat center top;background-position:center 6px;}
+.main .nav.on .btn-menu span:after,
+.main .nav.on .btn-menu span em:after {background:#080058;}
 [ir-idx="2"] {transition:all .7s ease-in-out;transition-delay:.8s;}
 [ir-idx="6"] {transition:all .7s ease-in-out;transition-delay:1.2s;}
 
