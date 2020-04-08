@@ -1,5 +1,8 @@
 $(function(){
-	var careerList = $('.career-list');
+	var careerList = $('.career-list'),
+	headerOur = $('.header'),
+	headerOurCnt = $('.header-cont'),
+	navBtnMenu = $('.nav .btn-menu');
 
 	careerList.on('click',function(){
 		var _this = $(this);
@@ -13,7 +16,6 @@ $(function(){
 		}
 	});
 
-
 	var fileTarget = $('.upload');
 	fileTarget.on('change', function () {
 		if (window.FileReader) {
@@ -25,5 +27,21 @@ $(function(){
 			var filename = $(this).val().split('/').pop().split('\\').pop();
 		};
 		$(this).siblings('.upload-name').val(filename);
+	});
+
+	$(window).scroll(function(){
+		var scrPos = $(this).scrollTop(),
+		actPos = $('.career-list-outer').offset().top;
+		if (scrPos > actPos) {
+			headerOur.addClass('scroll');
+			headerOurCnt.find('.h-logo img').attr('src', '/anchors/assets/images/common/img_header_logo.png');
+			navBtnMenu.removeClass('other');
+			if (winW > alignSize) {
+			}
+		} else {
+			headerOur.removeClass('scroll');
+			headerOurCnt.find('.h-logo img').attr('src', '/anchors/assets/images/common/img_header_logo2.png');
+			navBtnMenu.addClass('other');
+		}
 	});
 });
