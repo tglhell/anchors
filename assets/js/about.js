@@ -2,11 +2,12 @@ $(function(){
 	posArr = [],
 	pfHgt = $(window).height(),
 	wrapBox = $('.ctr-ir'),
-	wrapBoxLeng = wrapBox.length;
-	Service = $('.service-list');
-	servicePos = $('.service-cont').offset().top;
-	anchorsMv = $('.anchors-mv-box').offset().top;
-	partnersPos = $('.partners-outer').offset().top;
+	wrapBoxLeng = wrapBox.length,
+	servicePos = $('.service-outer').offset().top,
+	serviceLi = $('.service-list li'),
+	serviceLen = $('.service-list li').length,
+	partnersPos = $('.partners-outer').offset().top,
+	aniItem = setTimeout;
 
 	$(window).scroll(function (e) {
 		alignPos ();
@@ -21,12 +22,29 @@ $(function(){
 	});
 
 	function service () {
-		if (scrPos >= servicePos-800) {
-			Service.addClass('on'); 
-		} else {
-			Service.removeClass('on cursor'); 
+		if (!serviceLi.is(':animated')) {
+			if (scrPos >= servicePos - 800) {
+				serviceLi.stop().animate({ 'overflow': 'visible' }, 4900);
+				for (i = 0; i <= serviceLen; i++) {
+					$(function (i) {
+						aniItem(function () {
+							serviceLi.eq(i).addClass('on');
+						}, i*600)
+					}(i));
+					aniItem(function () {
+						if (serviceLi.last().hasClass('on')) {
+							serviceLi.addClass('cursor');
+						} else {
+							serviceLi.removeClass('cursor');
+						}
+					},4200)
+				}
+			} else {
+				serviceLi.removeClass('on cursor');
+			}
 		}
-	}
+	};
+	
 
 	function partners () {
 		if (scrPos >= partnersPos-300) {
@@ -34,7 +52,7 @@ $(function(){
 		} else {
 			$('.partners-outer').removeClass('on');
 		}
-	}
+	};
 
 	function alignPos (){
 		scrPos = $(this).scrollTop();
@@ -46,7 +64,7 @@ $(function(){
 			} else {
 				wrapBox.eq(i).addClass('on').removeAttr('ir-idx').attr('ir', '');
 			}
-		}
+		};
 	};
 	alignPos();
 });

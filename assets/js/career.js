@@ -36,8 +36,6 @@ $(function(){
 			headerOur.addClass('scroll');
 			headerOurCnt.find('.h-logo img').attr('src', '/anchors/assets/images/common/img_header_logo.png');
 			navBtnMenu.removeClass('other');
-			if (winW > alignSize) {
-			}
 		} else {
 			headerOur.removeClass('scroll');
 			headerOurCnt.find('.h-logo img').attr('src', '/anchors/assets/images/common/img_header_logo2.png');
