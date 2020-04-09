@@ -229,9 +229,12 @@
 	100% {opacity:0;height:0;}
 }
 
-@media (max-width:1119px) {
+@media (max-width:1120px) {
 	.main-logo-outer .main-logo-tit .main-logo-left[ir-idx="3"] img {width:10.696762vw;}
 	.main-logo-outer .main-logo-tit .main-logo-middle[ir-idx="4"] img {width:55.152109vw;}
 	.main-logo-outer.l-phase .main-logo-tit .main-logo-middle[ir-idx="4"] {width:55.152109vw;}
 	.main-logo-outer .main-logo-tit .main-logo-right[ir-idx="5"] img {width:6.967615vw;}
+
+	[ir-idx="2"] .main-step-navi {right:20px;}
+	.main-ir-list li:nth-child(4) .main-ir-item .s-center:after {opacity:0;}
 }

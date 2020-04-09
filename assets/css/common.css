@@ -300,7 +300,7 @@ caption {
 .inp-text::-webkit-input-placeholder {color:#898989;font-size:15px;}
 .inp-text::placeholder {color:#898989;font-size:15px;}
 .inp-text:-ms-input-placeholder {color:#898989;font-size:15px;}
-.inp-text:-webkit-autofill {-webkit-box-shadow: 0 0 0 1000px #f4f4f4 inset;}
+.inp-text:-webkit-autofill {-webkit-box-shadow:0 0 0 1000px #f4f4f4 inset;box-shadow:0 0 0 1000px #f4f4f4 inset;}
 
 /* checkbox */
 .checkbox-list {overflow:hidden;}
