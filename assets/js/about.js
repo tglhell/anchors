@@ -22,7 +22,7 @@ $(function(){
 
 		//service
 		if (!serviceLi.is(':animated')) {
-			if (scrPos >= servicePos - 800) {
+			if (scrPos >= servicePos - 300) {
 				serviceLi.stop().animate({ 'overflow': 'visible' }, 4900);
 				for (i = 0; i <= serviceLen; i++) {
 					$(function (i) {
