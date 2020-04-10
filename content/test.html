@@ -14,40 +14,6 @@
 	<!-- <script src="/anchors/assets/js/lib/jquery.smoothwheel.js"></script> -->
 	<script src="/anchors/assets/js/common.js"></script>
 	<!-- <script src="/anchors/assets/js/detail.js"></script> -->
-	<script type="text/javascript" src=" http://maps.google.com/maps/api/js?v=3.3&sensor=true"></script>
-	<script type="text/javascript">
-		function initialize() {
-			var myLatlng = new google.maps.LatLng(37.556911, 126.918694);
-			var myOptions = {
-				zoom: 15,
-				center: myLatlng,
-				mapTypeId: google.maps.MapTypeId.TERRAIN
-			}
-			var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-			var marker = new google.maps.Marker({
-				position: myLatlng,
-				map: map,
-				title: "(주)서울"
-			});
-			var infowindow = new google.maps.InfoWindow({
-				content: "(주)서울시 마포구"
-			});
-			infowindow.open(map, marker);
-		}
-		window.onload = function () {
-			initialize();
-		}
-	</script>
-	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a34887470ae136f1b71697c7ee9b92a9"></script>
-	<script>
-		var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-			var options = { //지도를 생성할 때 필요한 기본 옵션
-				center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
-				level: 3 //지도의 레벨(확대, 축소 정도)
-			};
-
-			var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-	</script>
 </head>
 
 <body>
@@ -85,11 +51,8 @@
 					<div class="btn-box">
 						<a href="#none">Go to site</a>
 					</div>
-					<div id="map_canvas" style="height:500px;">
 
-					</div>
-
-					<div id="map" style="width:500px;height:400px;"></div>
+					<a id="map" href="http://kko.to/TO3BjqR0M" target="_blank" style="display:block;width:500px;height:400px;"></a>
 				</div>
 				<div class="detail-step-outer">
 					<h2 class="detail-step-tit"><strong>Overview</strong></h2>
@@ -132,4 +95,24 @@
 		<!-- e : bottom fixed -->
 	</div>
 </body>
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a34887470ae136f1b71697c7ee9b92a9"></script>
+<script>
+	var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+	var options = { //지도를 생성할 때 필요한 기본 옵션
+		center: new kakao.maps.LatLng(37.55410761985322, 126.91242520213594), //지도의 중심좌표.
+		level: 3 //지도의 레벨(확대, 축소 정도)
+	};
+
+	var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+
+	var marker = new kakao.maps.Marker({
+		// 지도 중심좌표에 마커를 생성합니다 
+		position: map.getCenter()
+	}); 
+// 지도에 마커를 표시합니다
+	marker.setMap(map);
+	
+</script>
+
 </html>
