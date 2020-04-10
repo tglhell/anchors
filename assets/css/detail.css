@@ -11,7 +11,6 @@
 .detail-step-outer {position:relative;max-width:1450px;height:1200px;margin:0 auto;padding-top:200px;}
 .detail-step-outer .detail-step-tit {font-size:108px;color:#080058;line-height:120px;}
 .detail-step-outer .detail-step-tit strong {font-weight:800;}
-.detail-step-outer .detail-step-img {margin-top:330px;}
 .detail-step-outer .detail-step-desc {margin-top:32px;font-size:25px;color:#080058;line-height:32px;}
 .detail-step-outer .btn-box {position:absolute;top:50%;right:190px;margin-top:-14px;}
 .detail-step-outer .btn-box a {position:relative;font-size:18px;color:#080058;line-height:27px;letter-spacing:0;}
@@ -23,4 +22,5 @@
 	.detail-step-outer {height:82.758621vw;padding:13.793103vw 3.448276vw 0;}
 	.detail-step-outer .detail-step-tit {font-size:7.448276vw;line-height:8.275862vw;}
 	.detail-step-outer .detail-step-desc {font-size:1.724138vw;line-height:2.206896vw;}
+	.detail-step-outer:nth-child(2) .detail-step-desc {margin-top:50.896552vw;}
 }
