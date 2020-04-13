@@ -17,7 +17,9 @@
 [ir-idx="12"] {transition:all .7s ease-in-out;}
 
 /* Portfolio Content */
-.portfolio-top-outer {height:947px;}
+.portfolio-top-outer {position:relative;height:947px;}
+.portfolio-top-outer:before {content:'';position:absolute;top:0;bottom:0;left:0;right:0;z-indeX:2;opacity:0;background:rgba(0,0,0,.5);}
+.portfolio-top-outer.dim:before {opacity:1;}
 .portfolio-top-outer .btn-portfolio-in {position:absolute;left:50%;bottom:65px;z-index:2;margin-left:-15px;color:#fff;}
 .portfolio-top-outer .btn-portfolio-in:focus {outline:none;}
 .portfolio-top-outer .btn-portfolio-in span {position:relative;display:inline-block;font-size:15px;color:#fff;line-height:36px;vertical-align:top;}
@@ -45,7 +47,7 @@
 .portfolio-swiper-box:before {content:'';position:absolute;top:0;bottom:0;left:0;right:0;z-index:3;background:rgba(0,0,0,.7);}
 .portfolio-swiper-box:after {content:'PAUSE';position:absolute;top:50%;left:50%;z-index:3;-webkit-transform:translate(-50%, -50%) scale(1.5);transform:translate(-50%, -50%) scale(1.5);font-size:160px;font-weight:700;color:#fff;line-height:180px;text-shadow:5px 5px 0 rgba(255,255,255,.2);}
 .portfolio-swiper-box:before,
-.portfolio-swiper-box:after {z-index:1;opacity:0;}
+.portfolio-swiper-box:after {z-index:-1;opacity:0;}
 .portfolio-swiper-box.on:before {animation:opacity-bg-ctl-on 1.2s ease-in;}
 .portfolio-swiper-box.on:after {animation:opacity-bg-ctl-other-on 1.2s ease-in;}
 .portfolio-swiper-box.off:before {animation:opacity-bg-ctl-off 1.2s ease-in;}
@@ -121,7 +123,7 @@
 }
 
 @media (max-width:1120px) and (min-width: 768px) {
-	.portfolio-slide .title-cont {bottom:8.035714vw;left:8.928571vw;}
+	/* .portfolio-slide .title-cont {bottom:8.035714vw;left:8.928571vw;}
 	.portfolio-slide .title-cont .slide-tit {padding-left:4.910714vw;background-size:3.660714vw 4.017857vw;font-size:4.910714vw;line-height:5.357142vw;}
 	.portfolio-slide .title-cont .slide-desc {margin-top:1.785714vw;font-size:1.785714vw;line-height:2.499999vw;}
 	.portfolio-top-outer .btn-portfolio-in {bottom:2.232143vw;margin-left:-2.678571vw;}
@@ -142,7 +144,7 @@
 	.portfolio-list .project-name {margin-top:1.071429vw;font-size:1.607143vw;line-height:1.785714vw;}
 	.portfolio-list-box .btn-box {margin-top:11.607143vw;}
 	.portfolio-list-box .btn-box .btn-more {min-width:17.857143vw;padding:0 1.339286vw;}
-	.portfolio-list-box .btn-box .btn-more span {font-size:1.071429vw;line-height:4.821429vw;}
+	.portfolio-list-box .btn-box .btn-more span {font-size:1.071429vw;line-height:4.821429vw;} */
 }
 
 @media (max-width: 767px) {

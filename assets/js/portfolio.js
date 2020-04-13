@@ -17,6 +17,7 @@ jQuery.event.add(window, 'load', function () {
 	navBtnMenu = $('.nav .btn-menu'),
 	toggleClass = $('.btn-toggle');
 	sideItem.css('opacity', '0');
+	$('html, body').animate({scrollTop : '0'}, '0');
 
 	$(window).resize(function () {
 		if (winW > 767) {
@@ -73,6 +74,12 @@ jQuery.event.add(window, 'load', function () {
 			} else {
 				posItem.eq(i).find('a').addClass('on').removeAttr('ir-idx').attr('ir', '');
 			}
+		}
+
+		if (scrPos > 0) {
+			$('.portfolio-top-outer').addClass('dim');
+		} else {
+			$('.portfolio-top-outer').removeClass('dim');
 		}
 	});
 

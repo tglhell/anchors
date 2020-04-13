@@ -32,6 +32,7 @@
 	.detail-step-outer .detail-step-desc {margin-top:6.458333vw;}
 	.detail-step-btm-txt {padding:2.604167vw 0 0 6.25vw;}
 	.detail-step-btm-txt p {font-size:1.458333vw;line-height:2.34375vw;}
+	.detail-step-outer .btn-box {margin-top:-2.604167vw;}
 	.detail-step-outer .btn-box .btn-back {top:-14.322917vw;}
 	.detail-step-outer .btn-box .btn-site {width:10.625vw;}
 	.detail-step-outer .btn-box .btn-site:after {width:10.625vw;}
