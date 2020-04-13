@@ -236,5 +236,6 @@
 	.main-logo-outer .main-logo-tit .main-logo-right[ir-idx="5"] img {width:6.967615vw;}
 
 	[ir-idx="2"] .main-step-navi {right:20px;}
-	.main-ir-list li:nth-child(4) .main-ir-item .s-center:after {opacity:0;}
+	[ir-intro="1"] li:nth-child(4) .main-ir-item .s-center:after,
+	[ir-intro="5"] li:nth-child(4) .main-ir-item .s-center:after {opacity:0;}
 }
