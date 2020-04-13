@@ -42,9 +42,10 @@ jQuery.event.add(window, 'load', function () {
 		$(this).closest('.nav').toggleClass('on');
 		if ($(this).parent().hasClass('full')) {
 			if ($(this).parent().hasClass('on')) {
-				$(this).parent().css('right', -(winWid - navWid)/2 + 20 + 'px');
+				// $(this).parent().css('right', -(winWid - navWid)/2 + 20 + 'px');
+				$(this).parent().css('right', '0');
 			} else {
-				$(this).parent().css('right', '3px');
+				$(this).parent().css('right', '58px');
 			}
 		}
 	});
@@ -53,7 +54,7 @@ jQuery.event.add(window, 'load', function () {
 		var tarItem = $('.nav .btn-menu, .nav .btn-menu *, .nav .menu, .nav .menu *');
 		if(!$(e.target).is(tarItem)) {
 			$('.nav').removeClass('on');
-			$('.nav.full').css('right', '3px');
+			$('.nav.full').css('right', '58px');
 		}
 	});
 
