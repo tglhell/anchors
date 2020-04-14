@@ -38,15 +38,6 @@
 .career-list.on .career-list-cont {right:4.6875vw;opacity:1;}
 .career-list.on {width:70%;background:#080058;}
 .career-list.on .career-list-tit {animation:aniTit 1s ease-in-out;opacity:1;transform:rotate(90deg) translate(0,-31.25vw) scale(1.5);transform-origin:left;color:#00c7ff;}
-@keyframes aniTit {
-	0% {
-		transform:rotate(90deg) translate(-1500px,-31.25vw) scale(1.5);
-		transition:none;
-	}
-	50% {
-		opacity: 0;
-	}
-}
 .career-list.on:after {right:-1000px;}
 .career-list.on:before {opacity:0;z-index:-1;}
 .career-list.off:after {right:-1000px;}
@@ -62,7 +53,7 @@
 .apply-form .form-list .file-box .upload-name {width:100%;height:100%;padding:0 45px 0 18px;line-height: 60px;border:none;background:#f4f4f4 url(/anchors/assets/images/common/ico_upload.png) no-repeat right center;background-size:41px 24px;font-size:15px;}
 .apply-form .form-list .file-box input[type="file"] {position:absolute;top:0;left:0;width:100%;height:100%;width:100%;height:100%;opacity:0;}
 
-@media (max-width: 1119px) {
+@media (max-width: 1120px) {
 	.career-top .txt-outer {width:100%;top:11.607142vw;padding:0 30px;}
 	.career-top .txt-outer .tit-txt .tit {font-size:20px;}
 	.career-top .txt-outer .tit-txt > p {margin-top:5px;font-size:14px;}
@@ -81,6 +72,18 @@
 	.career-apply .apply-txt .content {font-size:15px;line-height:26px;}
 }
 
+@media (max-width: 1024px) {
+	.career-list {height:414px;}
+	.career-list.on .career-list-tit-outer {top:34vw;bottom:auto;}
+	.career-list.on .career-list-tit {font-size:24px;line-height:32px;}
+	.career-list.on .career-list-cont {right:0;}
+}
+
+@keyframes aniTit {
+	0% {transform:rotate(90deg) translate(-1500px,-31.25vw) scale(1.5);transition:none;}
+	50% {opacity: 0;}
+}
+
 @media (max-width: 767px) {
 	.career-list {width:100%;}
 	.career-list.on {width:100%;}
@@ -89,6 +92,7 @@
 	.apply-form .form-tit {margin-bottom:10px;}
 	.apply-form .form-list {-webkit-column-count:1;-moz-column-count:1;column-count:1;-webkit-column-gap:0;-moz-column-gap:0;column-gap:0;-webkit-column-width:100%;-moz-column-width:100%;column-width:100%;}
 }
+
 @media (max-width: 550px) {
 	.checkbox-list li {width:100%;margin-top:25px;}
 }
