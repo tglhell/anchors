@@ -29,6 +29,12 @@
 [class*="swiper-button"]:focus:before,
 [class*="swiper-button"]:focus:after {background:#00c8ff;}
 
+@media (max-width:1920px) and (min-width:768px) {
+	.swiper-container-horizontal>.swiper-pagination-bullets,
+	.swiper-pagination-custom, .swiper-pagination-fraction {bottom:7.708333vw;right:7.291667vw;}
+	.portfolio-slide .swiper-pagination-bullet {padding:0.78125vw;}
+}
+
 @media (max-width: 1120px) {
 	.swiper-button-prev,
 	.swiper-button-next {width:2.678571vw;height:5.357143vw;margin-top:-2.678571vw;}
