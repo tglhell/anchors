@@ -1,19 +1,12 @@
-/** guide line 작업 후 삭제 **/
-/* .detail .header-cont {border-bottom:1px solid #00c8ff;}
-.detail-step-outer {border:1px solid #00c8ff;border-width:0 1px 1px;}
-.detail-step-outer:last-child {border-width:0 1px;} */
-/** guide line 작업 후 삭제 **/
-
-/* .detail .header-cont {max-width:1450px;margin:0 auto;}
-.detail .header-cont .h-logo {margin-left:-25px;} */
-
-.portfolio-detail-wrap {max-width:100%;margin:0 auto;background:url(/anchors/assets/images/content/detail/bg_detail_all.png) no-repeat center center;background-size:100% auto;}
+.portfolio-detail-wrap {max-width:100%;margin:0 auto;background:url(/anchors/assets/images/content/detail/bg_detail_01.png) no-repeat center center;background-size:100% auto;}
+.portfolio-detail-wrap.detail-02 {background-image:url(/anchors/assets/images/content/detail/bg_detail_02.png);}
 .detail-step-outer {position:relative;max-width:1120px;height:1200px;margin:0 auto;padding-top:364px;}
 .detail-step-outer .detail-step-eyebrow {margin-bottom:30px;font-size:25px;color:#080058;line-height:32px;}
 .detail-step-outer .detail-step-tit {font-size:60px;color:#080058;line-height:85px;}
 .detail-step-outer .detail-step-sub {margin-top:20px;font-size:35px;color:#080058;line-height:52px;}
-.detail-step-outer .detail-step-desc {position:relative;margin-top:124px;padding-left:73px;font-size:15px;color:#080058;line-height:22px;}
-.detail-step-outer .detail-step-desc:before {content:'';position:absolute;top:-30px;left:0;width:57px;height:68px;background:url(/anchors/assets/images/content/detail/ico_web_award.png) no-repeat center center;background-size:100% auto;}
+.detail-step-outer .detail-step-desc {position:relative;margin-top:60px;font-size:15px;color:#080058;line-height:22px;}
+.detail-step-outer .detail-step-desc.w-award {margin-top:124px;padding-left:73px;}
+.detail-step-outer .detail-step-desc.w-award:before {content:'';position:absolute;top:-30px;left:0;width:57px;height:68px;background:url(/anchors/assets/images/content/detail/ico_web_award.png) no-repeat center center;background-size:100% auto;}
 .detail-step-btm-txt {-webkit-transform:skewX(-35deg);transform:skewX(-35deg);display:inline-block;padding:50px 0 0 120px;}
 .detail-step-btm-txt p {-webkit-transform:skewX(35deg);transform:skewX(35deg);font-size:28px;color:#080058;line-height:45px;}
 .detail-step-outer .btn-box {position:absolute;top:50%;right:0;margin-top:-50px;}
@@ -29,30 +22,12 @@
 	.detail-step-outer .detail-step-eyebrow {margin-bottom:1.5625vw;font-size:1.302083vw;line-height:1.666667vw;}
 	.detail-step-outer .detail-step-tit {font-size:3.125vw;line-height:4.427083vw;}
 	.detail-step-outer .detail-step-sub {margin-top:1.041667vw;font-size:1.822917vw;line-height:2.708333vw;}
-	.detail-step-outer .detail-step-desc {margin-top:6.458333vw;}
+	.detail-step-outer .detail-step-desc {margin-top:3.125vw;}
+	.detail-step-outer .detail-step-desc.w-award {margin-top:6.458333vw;}
 	.detail-step-btm-txt {padding:2.604167vw 0 0 6.25vw;}
 	.detail-step-btm-txt p {font-size:1.458333vw;line-height:2.34375vw;}
 	.detail-step-outer .btn-box {margin-top:-2.604167vw;}
 	.detail-step-outer .btn-box .btn-back {top:-14.322917vw;}
 	.detail-step-outer .btn-box .btn-site {width:10.625vw;}
 	.detail-step-outer .btn-box .btn-site:after {width:10.625vw;}
-}
-
-@media (max-width:1120px) {
-	/* .detail-step-outer {padding:24.464286vw 16.964286vw 0;}
-	.detail-step-outer + .detail-step-outer {padding:20.535714vw 16.964286vw 0;}
-	.detail-step-outer + .detail-step-outer .detail-step-sub {margin-top:0;}
-	.detail-step-outer .detail-step-desc {padding-left:6.517857vw;font-size:1.339286vw;line-height:1.964286vw;}
-	.detail-step-outer .detail-step-desc:before {top:-2.678571vw;width:5.089286vw;height:6.071429vw;} */
-
-	/* .detail-step-outer .detail-step-eyebrow {margin-bottom:2.678571vw;font-size:2.232143vw;line-height:2.857144vw;}
-	.detail-step-outer .detail-step-tit {font-size:5.357143vw;line-height:7.589286vw;}
-	.detail-step-outer .detail-step-sub {margin-top:1.785714vw;font-size:3.124999vw;line-height:4.642857vw;}
-	.detail-step-outer .detail-step-desc {margin-top:11.071429vw;}
-	.detail-step-btm-txt {padding:4.464286vw 0 0 10.714286vw;}
-	.detail-step-btm-txt p {font-size:2.499999vw;line-height:4.017857vw;} */
-	/* .detail-step-btm-txt {padding:2.604167vw 0 0 8.928571vw;}
-	.detail-step-outer .btn-box .btn-back {right:5.178571vw;}
-	.detail-step-outer .btn-box .btn-site {margin-right:5.178571vw;padding-right:6.071429vw;}
-	.detail-step-outer .btn-box .btn-site:after {width:13.035714vw;} */
 }
