@@ -1,7 +1,7 @@
 .main {background:#080058;}
-.main .header-cont {max-width:100%;padding:0 93px;background:#080058;}
-.main .nav {right:100px !important;}
-.main .nav.on {right:0 !important;}
+.main .header-cont {max-width:100%;/* padding:0 93px; */background:#080058;}
+/* .main .nav {right:100px !important;}
+.main .nav.on {right:0 !important;} */
 .main .nav.on:before {background:#fff;}
 .main .nav .menu li a {background:#fff;color:#080058;}
 .main .nav .menu li a:before {background: url(/anchors/assets/images/common/bg_hover_line.png) no-repeat center top;background-position:center 6px;}
@@ -21,7 +21,7 @@
 .main-ir-list li:nth-child(3) {z-index:5;}
 .main-ir-list li:nth-child(4) {z-index:4;}
 .main-ir-list li .main-ir-item {position:relative;z-index:4;display:table;table-layout:fixed;width:100%;height:100%;font-size:0;}
-.main-ir-list li .main-ir-item span {transition:.8s;position:relative;z-index:3;color:#080058;}
+.main-ir-list li .main-ir-item span {transition:1s;position:relative;z-index:3;color:#080058;}
 .main-ir-list li .main-ir-item span em {color:#080058;}
 .main-ir-list li .main-ir-item .s-left,
 .main-ir-list li .main-ir-item .s-right {display:table-cell;background:#080058;}
