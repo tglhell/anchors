@@ -17,7 +17,6 @@ jQuery.event.add(window, 'load', function () {
 	navBtnMenu = $('.nav .btn-menu'),
 	toggleClass = $('.btn-toggle');
 	sideItem.css({'opacity':'0', 'z-index':'-1'});
-	$('html, body').animate({scrollTop : '0'}, '0');
 
 	$(window).resize(function () {
 		if (winW > 767) {
