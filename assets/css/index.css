@@ -14,7 +14,7 @@
 
 .main-ir-wrap {position:relative;overflow:hidden;height:783px;padding:175px 0 20px 100px;}
 .main-ir-list {position:relative;max-width:1820px;height:100%;margin:0 auto;}
-.main-ir-list:before {content:'';position:absolute;top:0;bottom:0;left:0;right:0;z-index:3;max-width:1820px;height:588px;background:url(/anchors/assets/images/index/step/bg_main_phase01.jpg) no-repeat center center;background-size:1820px 588px;}
+.main-ir-list:before {content:'';position:absolute;top:0;bottom:0;left:0;right:0;z-index:3;max-width:1820px;height:588px;background:url(/anchors/assets/images/index/step/bg_main_phase02.jpg) no-repeat center center;background-size:1820px 588px;}
 .main-ir-list li {position:relative;width:100%;height:25%;}
 .main-ir-list li:nth-child(1) {z-index:7;}
 .main-ir-list li:nth-child(2) {z-index:6;}
@@ -67,7 +67,7 @@
 [ir-intro="1"] li:nth-child(4) .main-ir-item .s-left {width:10%;}
 [ir-intro="1"] li:nth-child(4) .main-ir-item .s-right {width:77%;}
 
-[ir-intro="2"]:before {transition-delay:.4s;background-image:url(/anchors/assets/images/index/step/bg_main_phase02.jpg);}
+[ir-intro="2"]:before {transition-delay:.4s;background-image:url(/anchors/assets/images/index/step/bg_main_phase02_1.jpg);}
 [ir-intro="2"] li:nth-child(1) .main-ir-item .s-left {width:34%}
 [ir-intro="2"] li:nth-child(1) .main-ir-item .s-right {width:24%}
 [ir-intro="2"] li:nth-child(2) .main-ir-item .s-left {width:15%}
@@ -182,16 +182,16 @@
 .main-ir-list li:nth-child(3) .main-ir-item .s-right em:before {content:'';position:absolute;bottom:-5px;left:0;z-index:10;font-size:19px;color:#00c8ff;line-height:26px;letter-spacing:-1px;white-space:nowrap;}
 .main-ir-list li:nth-child(3) .main-ir-item .s-right em:after {content:'';position:absolute;bottom:-25px;left:-15px;z-index:10;font-size:13px;color:#00c8ff;line-height:20px;letter-spacing:-1px;}
 
-[ir-intro="1"] li:nth-child(3) .main-ir-item .s-right em:before {content:'GENESIS PROJECT1';}
-[ir-intro="1"] li:nth-child(3) .main-ir-item .s-right em:after {content:'SITE DEVELOPING & MANAGING / 2019';}
-[ir-intro="2"] li:nth-child(3) .main-ir-item .s-right em:before {content:'GENESIS PROJECT2';bottom:30px;}
-[ir-intro="2"] li:nth-child(3) .main-ir-item .s-right em:after {content:'SITE DEVELOPING & MANAGING / 2020';bottom:10px;}
-[ir-intro="3"] li:nth-child(3) .main-ir-item .s-right em:before {content:'GENESIS PROJECT3';}
-[ir-intro="3"] li:nth-child(3) .main-ir-item .s-right em:after {content:'SITE DEVELOPING & MANAGING / 2021';}
-[ir-intro="4"] li:nth-child(3) .main-ir-item .s-right em:before {content:'GENESIS PROJECT4';bottom:30px;}
-[ir-intro="4"] li:nth-child(3) .main-ir-item .s-right em:after {content:'SITE DEVELOPING & MANAGING / 2022';bottom:10px;}
-[ir-intro="5"] li:nth-child(3) .main-ir-item .s-right em:before {content:'GENESIS PROJECT5';}
-[ir-intro="5"] li:nth-child(3) .main-ir-item .s-right em:after {content:'SITE DEVELOPING & MANAGING / 2023';}
+[ir-intro="1"] li:nth-child(3) .main-ir-item .s-right em:before {content:'Kia Project';}
+[ir-intro="1"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Kia 2.0 Main Site Build / 2019. 10';}
+[ir-intro="2"] li:nth-child(3) .main-ir-item .s-right em:before {content:'Korean Air Project';bottom:30px;}
+[ir-intro="2"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Korean Air App Sophistication / 2019. 2';bottom:10px;}
+[ir-intro="3"] li:nth-child(3) .main-ir-item .s-right em:before {content:'Hyundai Project';}
+[ir-intro="3"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Customer Service Integration App Build / 2019. 12';}
+[ir-intro="4"] li:nth-child(3) .main-ir-item .s-right em:before {content:'Hyundai Project';bottom:30px;}
+[ir-intro="4"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Integration Hyundai Car Site Build / 2018. 3';bottom:10px;}
+[ir-intro="5"] li:nth-child(3) .main-ir-item .s-right em:before {content:'Genesis Project';}
+[ir-intro="5"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Hyundai Genesis Site Rebuild / 2019. 10';}
 [ir-intro="6"] li:nth-child(3) .main-ir-item .s-right em:before {content:'';}
 [ir-intro="6"] li:nth-child(3) .main-ir-item .s-right em:after {content:'';}
 
