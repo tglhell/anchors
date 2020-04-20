@@ -30,14 +30,6 @@ jQuery.event.add(window, 'load', function () {
 		location.reload();
 	});
 
-	function pfItemHgt () {
-		setTimeout(function () {
-			var dHgt = posItem.outerHeight(true) * 5;
-			posItem.parent().css('height', dHgt);
-		}, 0);
-	}
-	pfItemHgt ();
-
 	pageDownBtn.click(function () {
 		$('html, body').stop().animate({ scrollTop: pfHgt }, addMgn * 3, 'easeInQuart');
 		setTimeout(function(){
@@ -98,6 +90,14 @@ jQuery.event.add(window, 'load', function () {
 			$('.portfolio-swiper-box').removeClass('on').addClass('off');
 		}
 	});
+
+	function pfItemHgt() {
+		setTimeout(function () {
+			var dHgt = posItem.outerHeight(true) * 5;
+			posItem.parent().css('height', dHgt);
+		}, 0);
+	}
+	pfItemHgt();
 
 	function slideHgt() {
 		pfHgt = $(window).height();
