@@ -43,7 +43,11 @@ jQuery.event.add(window, 'load', function () {
 				// $(this).parent().css('right', -(winWid - navWid)/2 + 20 + 'px');
 				$(this).parent().css('right', '0');
 			} else {
-				$(this).parent().css('right', '58px');
+				if (winWid > 767) {
+					$(this).parent().css('right', '58px');
+				} else {
+					$(this).parent().css('right', '0');
+				}
 			}
 		}
 	});
@@ -52,7 +56,11 @@ jQuery.event.add(window, 'load', function () {
 		var tarItem = $('.nav .btn-menu, .nav .btn-menu *, .nav .menu, .nav .menu *');
 		if(!$(e.target).is(tarItem)) {
 			$('.nav').removeClass('on');
-			$('.nav.full').css('right', '58px');
+			if (winWid > 767) {
+				$('.nav.full').css('right', '58px');
+			} else {
+				$('.nav.full').css('right', '0');
+			}
 		}
 	});
 
@@ -61,8 +69,10 @@ jQuery.event.add(window, 'load', function () {
 		scrPosSum = $(document).height() - $(window).height() - $('.footer').height();
 		if (scrPos > 0) {
 			$('.header').addClass('scroll');
+			scrTop.addClass('active');
 		} else {
 			$('.header').removeClass('scroll');
+			scrTop.removeClass('active');
 		}
 
 		if ($('.main').length == 0) {
@@ -72,16 +82,11 @@ jQuery.event.add(window, 'load', function () {
 				$('.wrap').removeClass('side-fixed');
 			}
 		}
-
-		if (scrPos > winHgt) {
-			scrTop.addClass('active');
-		} else {
-			scrTop.removeClass('active');
-		}
 	});
 
 	scrTop.click(function(){
 		$('html, body').animate({ scrollTop: '0' }, '0');
+		$(this).blur();
 	});
 
 	if (winWid > 767) {

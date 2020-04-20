@@ -31,7 +31,7 @@ video {vertical-align:top;}
 [ir-idx="14"] {transition:all 1.4s ease-in-out;opacity:1;transform:translateY(0px);}
 [ir-idx="15"] {transition:all 1.6s ease-in-out;opacity:1;transform:translateY(0px);}
 
-.top-about-outer {transition:none;}
+.top-about-outer {transition:none;overflow:hidden;}
 .top-about-outer:after {display:block;width:100%;min-height:680px;background:url(/anchors/assets/images/content/about/bg_about_top.jpg) no-repeat center center;background-size:cover;transition:1.5s;transform:scale(1);content:'';}
 .top-about-box {position: relative;z-index:1;}
 .top-about-outer.on:after {transform:scale(1.1);}
