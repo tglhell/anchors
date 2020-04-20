@@ -23,6 +23,7 @@ jQuery.event.add(window, 'load', function () {
 			slideHgt();
 		}
 		txtBrChk();
+		pfItemHgt();
 	});
 
 	$(window).on('orientationchange', function () {

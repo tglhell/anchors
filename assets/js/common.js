@@ -31,10 +31,6 @@ jQuery.event.add(window, 'load', function () {
 		irInsert();
 	}, 50);
 
-	$(window).resize(function(){
-		$('.nav.on').css('right', -($(window).width() - $('.header-cont').width()) / 2 + 20 + 'px');
-	});
-
 	$('.nav .btn-menu').on('click', function (e) {
 		e.preventDefault();
 		$(this).closest('.nav').toggleClass('on');

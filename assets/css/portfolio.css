@@ -17,7 +17,7 @@
 [ir-idx="12"] {transition:all .7s ease-in-out;}
 
 /* Portfolio Content */
-.portfolio-top-outer {position:relative;height:947px;}
+.portfolio-top-outer {position:relative;overflow:hidden;height:947px;}
 .portfolio-top-outer:before {content:'';transition:opacity .5s, transform 0s linear;transition-delay:0s, .5s;-webkit-transform:translateY(-100%);transform:translateY(-100%);position:absolute;top:0;bottom:0;left:0;right:0;opacity:0;z-index:2;background:rgba(0,0,0,.5);}
 .portfolio-top-outer.dim:before {transition:opacity .5s linear;-webkit-transform:translateY(0);transform:translateY(0);opacity:1;}
 .portfolio-top-outer .btn-portfolio-in {position:absolute;left:50%;bottom:65px;z-index:2;margin-left:-15px;color:#fff;}
