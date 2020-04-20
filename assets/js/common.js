@@ -46,7 +46,7 @@ jQuery.event.add(window, 'load', function () {
 				if (winWid > 767) {
 					$(this).parent().css('right', '58px');
 				} else {
-					$(this).parent().css('right', '0');
+					$(this).parent().css('right', '20px');
 				}
 			}
 		}
@@ -59,7 +59,7 @@ jQuery.event.add(window, 'load', function () {
 			if (winWid > 767) {
 				$('.nav.full').css('right', '58px');
 			} else {
-				$('.nav.full').css('right', '0');
+				$('.nav.full').css('right', '20px');
 			}
 		}
 	});

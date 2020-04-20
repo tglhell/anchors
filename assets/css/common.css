@@ -448,7 +448,7 @@ caption {
 
 @media (max-width: 767px) {
 	.header-cont {padding:0 20px 0 11px;}
-	.nav {right:0;}
+	.nav {right:20px;}
 	.nav .menu {margin-right:-35px;}
 	.nav.on .btn-menu {margin-right:21px;}
 

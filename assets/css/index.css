@@ -1,7 +1,5 @@
 .main {background:#080058;}
-.main .header-cont {max-width:100%;/* padding:0 93px; */background:#080058;}
-/* .main .nav {right:100px !important;}
-.main .nav.on {right:0 !important;} */
+.main .header-cont {max-width:100%;background:#080058;}
 .main .nav.on:before {background:#fff;}
 .main .nav .menu li a {background:#fff;color:#080058;}
 .main .nav .menu li a:before {background: url(/anchors/assets/images/common/bg_hover_line.png) no-repeat center top;background-position:center 6px;}
@@ -229,6 +227,10 @@
 	50% {opacity:1;height:588px;}
 	80% {opacity:0;height:588px;}
 	100% {opacity:0;height:0;}
+}
+
+@media (max-width:1920px) {
+	.main-ir-wrap {padding-left:5.208333vw;}
 }
 
 @media (max-width:1120px) {
