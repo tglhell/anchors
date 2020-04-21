@@ -47,7 +47,7 @@
 .portfolio-slide .swiper-slide img {-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);position:absolute;top:50%;left:50%;max-width:none;}
 .portfolio-slide .swiper-slide > a {position:relative;overflow:hidden;width:100%;pointer-events:none;}
 .portfolio-slide .swiper-slide > a:before {content:'';position:absolute;top:0;bottom:0;left:0;right:0;z-index:2;background:rgba(0,0,0,.2);}
-.portfolio-slide .title-cont {position:absolute;bottom:155px;left:20%;z-index:2;display:block;}
+.portfolio-slide .title-cont {position:absolute;bottom:155px;left:150px;z-index:2;display:block;}
 .portfolio-slide .title-cont .slide-tit {display:block;padding-left:55px;background:url(/anchors/assets/images/content/portfolio/ico_sl_tit.png) no-repeat left center;font-size:55px;font-weight:700;color:#fff;line-height:60px;}
 .portfolio-slide .title-cont .slide-desc {display:block;margin-top:20px;font-size:20px;font-weight:300;color:#fff;line-height:28px;}
 .portfolio-list-outer {position:relative;padding:0 25px;z-index:2;background:#fff;}
@@ -110,6 +110,7 @@
 }
 
 @media (max-width:1920px) and (min-width: 768px) {
+	.portfolio-slide .title-cont {left:7.8125vw;}
 	.portfolio-top-outer .btn-portfolio-control {bottom:9.375vw;right:7.291667vw;}
 }
 

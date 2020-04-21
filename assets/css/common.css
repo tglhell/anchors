@@ -399,7 +399,7 @@ caption {
 .nav .btn-menu.other span:after,
 .nav .btn-menu.other span em:before,
 .nav .btn-menu.other span em:after {background:#fff;}
-.nav.on .btn-menu {margin-right:58px;}
+.nav.on .btn-menu {margin-right:38px;}
 .nav.on .btn-menu span:after {-webkit-transform:rotate(35deg);transform:rotate(35deg);margin-left:0;}
 .nav.on .btn-menu span em {margin-top:-2px;}
 .nav.on .btn-menu span:after {top:-5px;}
