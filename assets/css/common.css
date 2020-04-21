@@ -438,7 +438,8 @@ caption {
 	.nav .menu li a:hover:before {height:8.571428vw;}
 	.nav.on {width:99.999999vw;height:99.999999vw;}
 	
-	.btm-copyright,.btn-contact-us {opacity:0;}
+	.btm-copyright,
+	.btn-contact-us {opacity:0;}
 
 	@keyframes triangle-box {
 		50% {top:-16.785714vw;}
@@ -457,6 +458,8 @@ caption {
 	.btn-scroll-top {bottom:20px;right:20px;}
 	.btn-scroll-top:before {opacity:1;}
 	.side-fixed .btn-scroll-top {bottom:20px;}
+	.btm-copyright,
+	.btn-contact-us {opacity:0;}
 
 	.footer {height:auto;}
 	.footer .logo {display:block;float:none;}
@@ -465,6 +468,7 @@ caption {
 	.footer .company-info > li + li {margin:15px 0 0 0;}
 	.footer .copyright {position:static;margin-top:30px;}
 }
+
 @media (max-width: 600px) {
 	.footer .footer-cont {padding:40px 20px;}
 	.cont-tit {margin-bottom:25px;font-size:25px;line-height:50px;}
