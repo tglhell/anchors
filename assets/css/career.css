@@ -42,7 +42,7 @@
 .career-list.on .career-list-cont {right:4.6875vw;opacity:1;}
 .career-list:nth-child(2).on .career-list-cont {left:2.34375vw;right:2.34375vw;}
 .career-list.on {width:70%;background:#080058;}
-.career-list.on .career-list-tit {animation:aniTit 1s ease-in-out;opacity:1;transform:rotate(90deg) translate(0,-31.25vw) scale(1.5);transform-origin:left;color:#00c7ff;}
+.career-list.on .career-list-tit {animation:aniTit 1s ease-in-out;opacity:1;transform:rotate(90deg) translate(0, -31.25vw) scale(1.5);transform-origin:left;color:#00c7ff;}
 .career-list.on:after {right:-1000px;}
 .career-list.on:before {opacity:0;z-index:-1;}
 .career-list.off:after {right:-1000px;}

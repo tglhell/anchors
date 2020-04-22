@@ -437,7 +437,9 @@ caption {
 	.nav .menu li a:before {top:-2.678571vw;bottom:-2.678571vw;background-position-y:0.535714vw;}
 	.nav .menu li a:hover:before {height:8.571428vw;}
 	.nav.on {width:99.999999vw;height:99.999999vw;}
-	
+
+	.btn-scroll-top {bottom:20px;right:30px;}
+	.side-fixed .btn-scroll-top {bottom:180px;}
 	.btm-copyright,
 	.btn-contact-us {opacity:0;}
 
