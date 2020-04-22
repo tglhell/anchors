@@ -74,9 +74,6 @@
 .portfolio-list-box .btn-box .btn-more:hover span {color:#fff;}
 .portfolio-list-box .btn-box .btn-more:hover span:before {right:0;}
 
-.btm-copyright,
-.btn-contact-us {opacity:0;}
-
 @keyframes opacity-bg-ctl-on {
 	0% {z-index:3;}
 	40%,

@@ -16,7 +16,6 @@ jQuery.event.add(window, 'load', function () {
 	btnMoreItem = $('.portfolio-list-box .btn-more'),
 	navBtnMenu = $('.nav .btn-menu'),
 	toggleClass = $('.btn-toggle');
-	sideItem.css({'opacity':'0', 'z-index':'-1'});
 
 	$(window).resize(function () {
 		if (winW > 767) {
@@ -46,15 +45,11 @@ jQuery.event.add(window, 'load', function () {
 			headerOurCnt.find('.h-logo img').attr('src', '/anchors/assets/images/common/img_header_logo.png');
 			navBtnMenu.removeClass('other');
 			ptSwpBox.css('position', 'absolute');
-			if (winW > alignSize) {
-				sideItem.css({'opacity':'1', 'z-index':'20'});
-			}
 		} else {
 			headerOur.removeClass('scroll');
 			headerOurCnt.find('.h-logo img').attr('src', '/anchors/assets/images/common/img_header_logo2.png');
 			navBtnMenu.addClass('other');
 			ptSwpBox.css('position', 'fixed');
-			sideItem.css({'opacity':'0', 'z-index':'-1'});
 		}
 
 		for (var i = 0; i < posItemLength; i++) {
