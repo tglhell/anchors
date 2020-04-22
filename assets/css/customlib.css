@@ -51,5 +51,8 @@
 }
 
 @media (max-width: 767px) {
+	.swiper-container-horizontal>.swiper-pagination-bullets,
+	.swiper-pagination-custom,
+	.swiper-pagination-fraction {right:30px;}
 	.portfolio-slide .swiper-pagination-bullet {width:20px;}
 }
