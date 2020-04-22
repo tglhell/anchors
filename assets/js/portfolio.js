@@ -11,7 +11,6 @@ jQuery.event.add(window, 'load', function () {
 	slideAutoHgt = $('.portfolio-slide a, .portfolio-top-outer'),
 	headerOur = $('.header'),
 	headerOurCnt = $('.header-cont'),
-	sideItem = $('.btm-copyright, .btn-contact-us'),
 	brChk = $('.portfolio-list-box .pf-desc br'),
 	btnMoreItem = $('.portfolio-list-box .btn-more'),
 	navBtnMenu = $('.nav .btn-menu'),
@@ -21,8 +20,8 @@ jQuery.event.add(window, 'load', function () {
 		if (winW > 767) {
 			slideHgt();
 		}
-		txtBrChk();
 		pfItemHgt();
+		txtBrChk();
 	});
 
 	$(window).on('orientationchange', function () {
