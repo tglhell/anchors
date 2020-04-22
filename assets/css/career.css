@@ -68,11 +68,13 @@
 	.career-list {height:580px;}
 	.career-list:before {font-size:15px;}
 	.career-list .career-list-cont {right:-1000px;bottom:30px;}
-	.career-list .career-list-cont .cont-list {margin:0 -10px;}
+	.career-list .career-list-cont .cont-list {width:auto;margin:0 -10px;}
 	.career-list.on .career-list-tit-outer {top:36vw;bottom:auto;}
 	.career-list.on .career-list-tit {font-size:24px;line-height:32px;}
-	.career-list.on .career-list-cont {left:20px;right:20px;bottom:30px;}
+	.career-list .career-list-cont {left:20px;right:20px;top:16.071428vw;bottom:auto;}
 	.career-list .career-list-cont .cont-list > li {width:50%;padding:0 10px;}
+	.career-list:nth-child(2):after {height:580px;}
+	.career-list:nth-child(2) .career-list-cont .cont-list > li {padding:0 5px;}
 	.career-list .career-list-cont .cont-list > li+li {margin-left:0;}
 	.career-list .career-list-cont .cont-list > li .tit {padding-bottom:5px;margin-bottom:20px;font-size: 18px;}
 	.career-list .career-list-cont .cont-list > li > ul > li {min-height:90px;font-size: 12px;line-height:20px;}
