@@ -60,8 +60,6 @@
 						#map .btn-large-map {position:absolute;top:15px;right:15px;z-index:10;padding:10px;background:rgba(0,0,0,.5);font-size:14px;color:#fff;line-height:20px;}
 					</style>
 
-
-
 					<script>
 						$(function(){
 							$(document).on('keydown keyup', function(){
@@ -73,6 +71,10 @@
 								} else {
 									$('#map').removeClass('dim');
 								}
+							});
+
+							$('.btn-large-map').click(function(){
+								$('#map').removeClass('dim');
 							});
 						});
 					</script>
@@ -126,7 +128,8 @@
 		// 지도 중심좌표에 마커를 생성합니다 
 		position: map.getCenter()
 	}); 
-// 지도에 마커를 표시합니다
+
+	// 지도에 마커를 표시합니다
 	marker.setMap(map);
 	
 </script>
