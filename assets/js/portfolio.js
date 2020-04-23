@@ -26,6 +26,11 @@ jQuery.event.add(window, 'load', function () {
 
 	$(window).on('orientationchange', function () {
 		location.reload();
+		if (event.orientation == "portrait") {
+			$('.portfolio-slide .swiper-slide').find('img').css('height', 'auto');
+		} else if (event.orientation == "landscape") {
+			$('.portfolio-slide .swiper-slide').find('img').css('height', '100%');
+		}
 	});
 
 	pageDownBtn.click(function () {
