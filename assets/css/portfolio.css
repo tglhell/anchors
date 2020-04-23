@@ -113,19 +113,28 @@
 
 @media (max-width:1120px) and (min-width: 768px) {
 	.portfolio-list li {margin-top:8.928571vw;}
+	.portfolio-slide .swiper-slide img {height:100%;}
+	.portfolio-slide .title-cont .slide-tit {font-size:36px;line-height:48px;}
+	.portfolio-slide .title-cont .slide-desc {font-size:16px;line-height:24px;}
+	.portfolio-top-outer .btn-portfolio-in {bottom:40px;}
+	.portfolio-top-outer .btn-portfolio-in span {font-size:13px;line-height:24px;}
+	.portfolio-top-outer .btn-portfolio-in span:before,
+	.portfolio-top-outer .btn-portfolio-in span:after {top:25px;height:14px;}
+	.portfolio-top-outer .btn-portfolio-in span:before {margin-left:-6px;}
+	.portfolio-top-outer .btn-portfolio-in span:after {margin:0 0 0 3px;}
 }
 
 @media (max-width: 767px) {
-	.portfolio-slide .title-cont {bottom:50px;left:30px;}
-	.portfolio-slide .title-cont .slide-tit {padding-left:40px;background-size:30px 34px;font-size:40px;line-height:52px;}
-	.portfolio-slide .title-cont .slide-desc {font-size:14px;line-height:22px;}
-	.portfolio-top-outer .btn-portfolio-in {bottom:2.232143vw;margin-left:-2.678571vw;}
-	.portfolio-top-outer .btn-portfolio-in span {width:5.357143vw;height:3.392857vw;}
-	.portfolio-top-outer .btn-portfolio-in span:before {left:1.339286vw;height:3.571429vw;}
-	.portfolio-top-outer .btn-portfolio-in span:after {left:3.839286vw;height:3.571429vw;}
-	.portfolio-top-outer .btn-portfolio-in span em:before {left:1.696429vw;height:2.678571vw;}
-	.portfolio-top-outer .btn-portfolio-in span em:after {left:3.482143vw;height:2.678571vw;}
-	.portfolio-top-outer .btn-portfolio-control {right:27px;}
+	.portfolio-slide .title-cont {bottom:100px;left:30px;}
+	.portfolio-slide .title-cont .slide-tit {padding-left:40px;background-size:30px 34px;font-size:32px;line-height:40px;}
+	.portfolio-slide .title-cont .slide-desc {margin-top:10px;font-size:14px;line-height:22px;}
+	.portfolio-top-outer .btn-portfolio-in {bottom:40px;left:45px;}
+	.portfolio-top-outer .btn-portfolio-in span {font-size:13px;line-height:24px;}
+	.portfolio-top-outer .btn-portfolio-in span:before,
+	.portfolio-top-outer .btn-portfolio-in span:after {top:25px;height:14px;}
+	.portfolio-top-outer .btn-portfolio-in span:before {margin-left:-6px;}
+	.portfolio-top-outer .btn-portfolio-in span:after {margin:0 0 0 3px;}
+	.portfolio-top-outer .btn-portfolio-control {bottom:60px;right:27px;}
 	.portfolio-list-box {padding:40px 0 76px;}
 	.portfolio-list-box .pf-title {margin-bottom:24px;font-size:26px;line-height:40px;}
 	.portfolio-list-box .pf-desc {font-size:12px;line-height:18px;}

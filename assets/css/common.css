@@ -320,9 +320,9 @@ caption {
 .checkbox input[type="checkbox"]:checked+label:after {height:0;}
 
 /* fixed area */
-.btn-scroll-top {position:fixed;bottom:180px;right:70px;z-index:12;opacity:0;}
+.btn-scroll-top {position:fixed;bottom:180px;right:70px;z-index:-1;opacity:0;}
 .btn-scroll-top:before {content:'';position:absolute;top:-20px;bottom:0;left:-10px;right:-10px;z-index:-1;opacity:0;border-radius:5px;background:rgba(255,255,255,.5);}
-.btn-scroll-top.active {opacity:1;}
+.btn-scroll-top.active {opacity:1;z-index:12;}
 .btn-scroll-top span {display:block;font-size:15px;color:#080058;line-height:36px;}
 .btn-scroll-top span:before,
 .btn-scroll-top span:after {content:'';position:absolute;top:-15px;left:50%;width:1px;height:20px;background:#080058;}
@@ -461,7 +461,7 @@ caption {
 	.btn-scroll-top:before {opacity:1;}
 	.side-fixed .btn-scroll-top {bottom:20px;}
 	.btm-copyright,
-	.btn-contact-us {opacity:0;}
+	.btn-contact-us {opacity:0;z-index:-1;}
 
 	.footer {height:auto;}
 	.footer .logo {display:block;float:none;}
