@@ -51,6 +51,8 @@
 }
 
 @media (max-width: 767px) {
+	.swiper-button-prev,
+	.swiper-button-next {display:none;}
 	.swiper-container-horizontal>.swiper-pagination-bullets,
 	.swiper-pagination-custom,
 	.swiper-pagination-fraction {bottom:35px;right:30px;}
