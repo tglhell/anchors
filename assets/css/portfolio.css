@@ -124,6 +124,7 @@
 }
 
 @media (max-width: 767px) {
+	.portfolio-slide .swiper-slide img {width:200%;height:100%;} /* 수정 필요 */
 	.portfolio-slide .title-cont {bottom:100px;left:30px;}
 	.portfolio-slide .title-cont .slide-tit {padding-left:40px;background-size:30px 34px;font-size:32px;line-height:40px;}
 	.portfolio-slide .title-cont .slide-desc {margin-top:10px;font-size:14px;line-height:22px;}
