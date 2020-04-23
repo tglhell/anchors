@@ -113,7 +113,6 @@
 
 @media (max-width:1120px) and (min-width: 768px) {
 	.portfolio-list li {margin-top:8.928571vw;}
-	.portfolio-slide .swiper-slide img {height:100%;}
 	.portfolio-slide .title-cont .slide-tit {font-size:36px;line-height:48px;}
 	.portfolio-slide .title-cont .slide-desc {font-size:16px;line-height:24px;}
 	.portfolio-top-outer .btn-portfolio-in {bottom:40px;}
@@ -125,7 +124,6 @@
 }
 
 @media (max-width: 767px) {
-	.portfolio-slide .swiper-slide img {width:200%;height:100%;} /* 수정 필요 */
 	.portfolio-slide .title-cont {bottom:100px;left:30px;}
 	.portfolio-slide .title-cont .slide-tit {padding-left:40px;background-size:30px 34px;font-size:32px;line-height:40px;}
 	.portfolio-slide .title-cont .slide-desc {margin-top:10px;font-size:14px;line-height:22px;}
