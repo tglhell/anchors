@@ -36,13 +36,14 @@ jQuery.event.add(window, 'load', function () {
 		$(this).closest('.nav').toggleClass('on');
 		if ($(this).parent().hasClass('full')) {
 			if ($(this).parent().hasClass('on')) {
-				// $(this).parent().css('right', -(winWid - navWid)/2 + 20 + 'px');
 				$(this).parent().css('right', '0');
+				$(this).parent().css('height', winHgt);
 			} else {
 				if (winWid > 767) {
 					$(this).parent().css('right', '58px');
 				} else {
-					$(this).parent().css('right', '20px');
+					$(this).parent().css('right', '0');
+					$(this).parent().css('height', '60px');
 				}
 			}
 		}
@@ -55,7 +56,7 @@ jQuery.event.add(window, 'load', function () {
 			if (winWid > 767) {
 				$('.nav.full').css('right', '58px');
 			} else {
-				$('.nav.full').css('right', '20px');
+				$('.nav.full').css('right', '0');
 			}
 		}
 	});
