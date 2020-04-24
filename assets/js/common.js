@@ -84,6 +84,7 @@ jQuery.event.add(window, 'load', function () {
 		$(this).blur();
 	});
 
+	// Opinion to be excluded from the design side
 	// if (winWid > 767) {
 	// 	$('<div class="mouse">').appendTo('body');
 	// 	var mouseX = -50, mouseY = -50;
