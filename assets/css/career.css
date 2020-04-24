@@ -96,14 +96,18 @@
 	.career-top .txt-outer .tit-txt p {float:none;text-align:left;}
 	.career-top .txt-outer .txt {margin-top:16px;font-size:12px;line-height:18px;}
 	.career-top .txt-outer .txt em {margin-bottom:10px;font-size:12px;line-height:18px;}
+	.career-list-outer {padding:20px 0;background:#080058;}
 	.career-list {width:100%;height:auto;}
-	.career-list.on {width:100%;padding:30px 20px;}
+	.career-list.on {width:100%;padding:15px 20px;}
 	.career-list.off {width:100%;}
 	.career-list.on .career-list-cont {position:static;}
 	.career-list.on .career-list-tit-outer {position:static;-webkit-transform:none;transform:none;widtH:auto;}
-	.career-list.on .career-list-tit {-webkit-transform:none;transform:none;margin-bottom:10px;}
+	.career-list.on .career-list-tit {-webkit-transform:none;transform:none;animation:none;margin-bottom:10px;}
 	.career-list .career-list-cont .cont-list {margin:0;}
 	.career-list .career-list-cont .cont-list > li {width:100%;padding:0;}
+	.career-list .career-list-cont .cont-list > li+li {margin-top:10px;}
+	.career-list .career-list-cont .cont-list > li > ul > li {min-height:auto;}
+	.career-list .career-list-cont .cont-list > li > ul > li+li {margin-top:10px;}
 	.career-list:nth-child(2) .career-list-cont .cont-list > li:first-child {width:100%;}
 	.career-list:nth-child(2) .career-list-cont .cont-list > li {width:100%;padding:0;}
 	.checkbox-list li {width:50%;margin-top:25px;}
