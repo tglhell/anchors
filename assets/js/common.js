@@ -5,32 +5,6 @@ jQuery.event.add(window, 'load', function () {
 	scrTop = $('.btn-scroll-top'),
 	aniItem = setTimeout;
 
-	function irInsert() {
-		$('[ir]').each(function (index) {
-			var iNum = showMainList.length, _this = $(this);
-			if (_this.children().is('li')) {
-				_this.removeAttr('ir').attr('ir-group-idx', (index + 1));
-			} else {
-				if (!$(this).hasClass('on')) {
-					_this.removeAttr('ir').attr('ir-idx', (index + 1));
-				}
-			}
-			aniItem(function () {
-				for (i = 0; i <= iNum; i++) {
-					$(function (i) {
-						aniItem(function () {
-							showMainList.eq(i).addClass('active');
-						}, 300 * i);
-					}(i));
-				}
-			}, 1200);
-		});
-	}
-
-	aniItem(function(){
-		irInsert();
-	}, 50);
-
 	$('.nav .btn-menu').on('click', function (e) {
 		e.preventDefault();
 		$(this).closest('.nav').toggleClass('on');
@@ -87,6 +61,32 @@ jQuery.event.add(window, 'load', function () {
 		$('html, body').animate({ scrollTop: '0' }, '0');
 		$(this).blur();
 	});
+
+	function irInsert() {
+		$('[ir]').each(function (index) {
+			var iNum = showMainList.length, _this = $(this);
+			if (_this.children().is('li')) {
+				_this.removeAttr('ir').attr('ir-group-idx', (index + 1));
+			} else {
+				if (!$(this).hasClass('on')) {
+					_this.removeAttr('ir').attr('ir-idx', (index + 1));
+				}
+			}
+			aniItem(function () {
+				for (i = 0; i <= iNum; i++) {
+					$(function (i) {
+						aniItem(function () {
+							showMainList.eq(i).addClass('active');
+						}, 300 * i);
+					}(i));
+				}
+			}, 1200);
+		});
+	}
+
+	aniItem(function () {
+		irInsert();
+	}, 50);
 
 	// Opinion to be excluded from the design side
 	// if (winWid > 767) {
