@@ -456,6 +456,7 @@ caption {
 	.nav:before {-webkit-transform:none;transform:none;left:0;}
 	.nav .menu {width:100%;height:calc(100% - 60px);margin-right:0;padding:60px 20px;}
 	.nav .menu li a {font-size:26px;line-height:34px;}
+	.nav .menu li a:before {background-position-y:5px;}
 	.nav .btn-menu {margin:0 20px 0 0;}
 	.nav.on {top:0;bottom:0;left:0;right:20px;z-index:7;width:100%;height:auto;}
 	.nav.on .btn-menu {margin-right:0;}
