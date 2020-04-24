@@ -1,6 +1,5 @@
 jQuery.event.add(window, 'load', function () {
-	var winW = $(window).width(),
-	posArr = [],
+	var posArr = [],
 	ptSwpBox = $('.portfolio-swiper-box'),
 	alignSize = parseInt($('.footer-cont').css('max-width')),
 	ftwVal = $('body').css('font-weight') / 4,
@@ -100,6 +99,7 @@ jQuery.event.add(window, 'load', function () {
 	slideHgt();
 
 	function txtBrChk() {
+		winW = $(window).width();
 		if (winW <= alignSize) {
 			brChk.hide();
 		} else {
