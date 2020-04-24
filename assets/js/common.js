@@ -36,7 +36,11 @@ jQuery.event.add(window, 'load', function () {
 		$(this).closest('.nav').toggleClass('on');
 		if ($(this).parent().hasClass('full')) {
 			if ($(this).parent().hasClass('on')) {
-				$(this).parent().css({'right':'0', 'height':winHgt});
+				if (winWid < 768) {
+					$(this).parent().css({'right':'0', 'height':winHgt});
+				} else {
+					$(this).parent().css('right', '0');
+				}
 			} else {
 				if (winWid > 767) {
 					$(this).parent().css('right', '58px');
