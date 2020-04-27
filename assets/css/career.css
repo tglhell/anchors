@@ -38,7 +38,7 @@
 .career-list .career-list-cont .cont-list > li > ul > li {color:#fff;font-size:0.885416vw;font-weight:300;line-height:1.40625vw;}
 .career-list .career-list-cont .cont-list > li > ul > li+li {margin-top:1.041666vw;}
 .career-list .career-list-cont .cont-list > li > ul > li > ul > li {position:relative;padding-left:10px;}
-.career-list .career-list-cont .cont-list > li > ul > li > ul > li:before {content:'';position:absolute;top:13px;left:0;width:2px;height:2px;border-radius:50%;background:#fff;}
+.career-list .career-list-cont .cont-list > li > ul > li > ul > li:before {content:'';position:absolute;top:0.677083vw;left:0;width:2px;height:2px;border-radius:50%;background:#fff;}
 .career-list.on .career-list-cont {right:4.6875vw;opacity:1;}
 .career-list:nth-child(2).on .career-list-cont {left:2.34375vw;right:2.34375vw;}
 .career-list.on {width:70%;background:#080058;}
