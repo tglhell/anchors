@@ -142,9 +142,9 @@
 	.portfolio-list {margin-top:2.678571vw;}
 	.portfolio-list li {margin-top:8.333333vw;}
 	.portfolio-list .project-item .project-info {padding:3.571429vw 3.839286vw;}
-	.portfolio-list .project-item .project-info .project-tit {height:5.714286vw;padding-left:5.357143vw;background-size:5.089286vw 5.714286vw;font-size:4.464286vw;line-height:5.714286vw;}
-	.portfolio-list .project-item .project-info .project-desc {margin-top:1.339286vw;padding-left:5.357143vw;font-size:1.607143vw;line-height:1.964286vw;}
-	.portfolio-list .project-item .project-info .btm-txt {bottom:3.214286vw;right:4.196429vw;font-size:1.607143vw;line-height:1.785714vw;}
+	.portfolio-list .project-item .project-info .project-tit {height:5.714286vw;padding-left:25px;background-size:19px 22px;font-size:18px;line-height:26px;}
+	.portfolio-list .project-item .project-info .project-desc {margin-top:10px;padding-left:0;font-size:12px;line-height:16px;}
+	.portfolio-list .project-item .project-info .btm-txt {bottom:10px;right:10px;font-size:13px;line-height:18px;}
 	.portfolio-list .project-name {margin-top:10px;font-size:14px;line-height:20px;}
 	.portfolio-list-box .btn-box {margin-top:70px;}
 	.portfolio-list-box .btn-box .btn-more {min-width:200px;padding:0 15px;}
