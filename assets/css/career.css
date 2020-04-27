@@ -97,8 +97,10 @@
 	.career-top .txt-outer .tit-txt p {float:none;text-align:left;}
 	.career-top .txt-outer .txt {margin-top:35px;font-size:12px;line-height:18px;}
 	.career-top .txt-outer .txt em {margin-bottom:10px;font-size:12px;line-height:18px;}
-	.career-list-outer {padding:20px 0;background:#080058;}
 	.career-list {width:100%;height:auto;}
+	.career-list.on:first-child {padding-top:35px;}
+	.career-list.on:nth-child(even) {background-color:#353435;}
+	.career-list.on:last-child {padding-bottom:35px;}
 	.career-list.on {width:100%;padding:15px 20px;}
 	.career-list.off {width:100%;}
 	.career-list.on .career-list-cont {position:static;}
