@@ -111,6 +111,7 @@
 	.career-list .career-list-cont .cont-list > li > ul > li+li {margin-top:10px;}
 	.career-list:nth-child(2) .career-list-cont .cont-list > li:first-child {width:100%;}
 	.career-list:nth-child(2) .career-list-cont .cont-list > li {width:100%;padding:0;}
+	.career-list .career-list-cont .cont-list > li > ul > li > ul > li:before {-webkit-transform:translateY(-50%);transform:translateY(-50%);top:50%;}
 	.checkbox-list li {width:50%;margin-top:25px;}
 	.apply-form .form-tit {margin-bottom:10px;}
 	.apply-form .form-list {-webkit-column-count:1;-moz-column-count:1;column-count:1;-webkit-column-gap:0;-moz-column-gap:0;column-gap:0;-webkit-column-width:100%;-moz-column-width:100%;column-width:100%;}
