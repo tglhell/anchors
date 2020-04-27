@@ -14,7 +14,11 @@ jQuery.event.add(window, 'load', function () {
 		var _this = $(this),
 		stepIdx = _this.index() + 1;
 		if (!mStepNavi.is(':animated')) {
-			_this.stop().animate({ 'overflow': 'visible' }, 1500);
+			if (winW > 767) {
+				_this.stop().animate({'overflow':'visible'}, 1500);
+			} else {
+				_this.stop().animate({'overflow':'visible'}, 1000);
+			}
 			mLogoOuter.removeClass('l-phase');
 			_this.addClass('on').siblings().removeClass('on');
 			mIrList.attr('ir-intro', stepIdx);
