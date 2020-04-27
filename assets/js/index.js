@@ -6,21 +6,10 @@ jQuery.event.add(window, 'load', function () {
 	mainHeight ();
 	
 	$(window).resize(function(){
-		mainHeight ();
+		mainHeight();
+		naviWid();
 	});
 	
-	for (i = 1; i < iCnt + 1; i++) {
-		$(function (i) {
-			irBox(function () {
-				mIrList.attr('ir-intro', i);
-				mStepNavi.eq(i - 1).addClass('on').siblings().removeClass('on');
-				if (i == iCnt) {
-					lPhase ();
-				}
-			}, 1500 * i);
-		}(i));
-	}
-
 	mStepNavi.click(function(){
 		var _this = $(this),
 		stepIdx = _this.index() + 1;
@@ -30,10 +19,28 @@ jQuery.event.add(window, 'load', function () {
 			_this.addClass('on').siblings().removeClass('on');
 			mIrList.attr('ir-intro', stepIdx);
 			if (stepIdx == iCnt) {
-				lPhase ();
+				lPhase();
 			}
 		}
 	});
+
+	function naviWid() {
+		winW = $(window).width();
+		if (winW > 767) {
+			for (i = 1; i < iCnt + 1; i++) {
+				$(function (i) {
+					irBox(function () {
+						mIrList.attr('ir-intro', i);
+						mStepNavi.eq(i - 1).addClass('on').siblings().removeClass('on');
+						if (i == iCnt) {
+							lPhase();
+						}
+					}, 1500 * i);
+				}(i));
+			}
+		}
+	}
+	naviWid();
 
 	function mainHeight () {
 		winH = $(window).height();
