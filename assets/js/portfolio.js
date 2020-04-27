@@ -23,10 +23,6 @@ jQuery.event.add(window, 'load', function () {
 		txtBrChk();
 	});
 
-	$(window).on('orientationchange', function () {
-		location.reload();
-	});
-
 	pageDownBtn.click(function () {
 		$('html, body').stop().animate({ scrollTop: pfHgt }, addMgn * 3, 'easeInQuart');
 		setTimeout(function(){

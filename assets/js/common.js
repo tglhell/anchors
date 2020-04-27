@@ -62,6 +62,12 @@ jQuery.event.add(window, 'load', function () {
 		$(this).blur();
 	});
 
+	$(window).on('orientationchange', function () {
+		aniItem(function(){
+			location.reload();
+		}, 100);
+	});
+
 	function irInsert() {
 		$('[ir]').each(function (index) {
 			var iNum = showMainList.length, _this = $(this);
