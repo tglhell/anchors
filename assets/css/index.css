@@ -178,22 +178,6 @@
 	[ir-intro="6"] li:nth-child(4) .main-ir-item .s-center:before,
 	[ir-intro="6"] li:nth-child(4) .main-ir-item .s-center:after {border-color:transparent;}
 
-	.main-ir-list li:nth-child(3) .main-ir-item .s-right em:before {content:'';position:absolute;bottom:-5px;left:0;z-index:10;font-size:19px;color:#00c8ff;line-height:26px;letter-spacing:-1px;white-space:nowrap;}
-	.main-ir-list li:nth-child(3) .main-ir-item .s-right em:after {content:'';position:absolute;bottom:-25px;left:-15px;z-index:10;font-size:13px;color:#00c8ff;line-height:20px;letter-spacing:-1px;}
-
-	[ir-intro="1"] li:nth-child(3) .main-ir-item .s-right em:before {content:'Kia Project';}
-	[ir-intro="1"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Kia 2.0 Main Site Build / 2019. 10';}
-	[ir-intro="2"] li:nth-child(3) .main-ir-item .s-right em:before {content:'Korean Air Project';bottom:30px;}
-	[ir-intro="2"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Korean Air App Sophistication / 2019. 2';bottom:10px;}
-	[ir-intro="3"] li:nth-child(3) .main-ir-item .s-right em:before {content:'Hyundai Project';}
-	[ir-intro="3"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Customer Service Integration App Build / 2019. 12';}
-	[ir-intro="4"] li:nth-child(3) .main-ir-item .s-right em:before {content:'Hyundai Project';bottom:30px;}
-	[ir-intro="4"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Integration Hyundai Car Site Build / 2018. 3';bottom:10px;}
-	[ir-intro="5"] li:nth-child(3) .main-ir-item .s-right em:before {content:'Genesis Project';}
-	[ir-intro="5"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Hyundai Genesis Site Rebuild / 2019. 10';}
-	[ir-intro="6"] li:nth-child(3) .main-ir-item .s-right em:before {content:'';}
-	[ir-intro="6"] li:nth-child(3) .main-ir-item .s-right em:after {content:'';}
-
 	[ir-intro="6"] {animation:next-phase 1.5s ease-in-out;opacity:0;height:0;}
 
 	.main-logo-outer {display:table;width:100%;height:588px;text-align:center;}
@@ -208,6 +192,21 @@
 	.main-logo-outer.l-phase .main-logo-tit .main-logo-middle[ir-idx="4"] img {transition:all 1.7s cubic-bezier(0.61, -0.05, 0.01, 0.71);transition-delay:2.5s;-webkit-transform:scale(1);transform:scale(1);opacity:1;}
 	.main-logo-outer.l-phase .main-logo-tit .main-logo-right[ir-idx="5"] {transition-delay:.8s;opacity:1;-webkit-transform:translateY(0);transform:translateY(0);}
 }
+
+.main-ir-list li:nth-child(3) .main-ir-item .s-right em:before {content:'';position:absolute;bottom:-5px;left:0;z-index:10;font-size:19px;color:#00c8ff;line-height:26px;letter-spacing:-1px;white-space:nowrap;}
+.main-ir-list li:nth-child(3) .main-ir-item .s-right em:after {content:'';position:absolute;bottom:-25px;left:-15px;z-index:10;font-size:13px;color:#00c8ff;line-height:20px;letter-spacing:-1px;}
+[ir-intro="1"] li:nth-child(3) .main-ir-item .s-right em:before {content:'Kia Project';}
+[ir-intro="1"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Kia 2.0 Main Site Build / 2019. 10';}
+[ir-intro="2"] li:nth-child(3) .main-ir-item .s-right em:before {content:'Korean Air Project';bottom:30px;}
+[ir-intro="2"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Korean Air App Sophistication / 2019. 2';bottom:10px;}
+[ir-intro="3"] li:nth-child(3) .main-ir-item .s-right em:before {content:'Hyundai Project';}
+[ir-intro="3"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Customer Service Integration App Build / 2019. 12';}
+[ir-intro="4"] li:nth-child(3) .main-ir-item .s-right em:before {content:'Hyundai Project';bottom:30px;}
+[ir-intro="4"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Integration Hyundai Car Site Build / 2018. 3';bottom:10px;}
+[ir-intro="5"] li:nth-child(3) .main-ir-item .s-right em:before {content:'Genesis Project';}
+[ir-intro="5"] li:nth-child(3) .main-ir-item .s-right em:after {content:'Hyundai Genesis Site Rebuild / 2019. 10';}
+[ir-intro="6"] li:nth-child(3) .main-ir-item .s-right em:before {content:'';}
+[ir-intro="6"] li:nth-child(3) .main-ir-item .s-right em:after {content:'';}
 
 .main-step-navi {position:fixed;top:50%;right:-100px;z-index:11;opacity:0;margin-top:-125px;}
 [ir-idx="2"] .main-step-navi {transition-delay:1.7s;right:60px;opacity:1;}
@@ -268,10 +267,23 @@
 	.main-ir-list li:nth-child(1) .main-ir-item .s-right:before,
 	.main-ir-list li:nth-child(1) .main-ir-item .s-right:after {left:100px;}
 
+	.main-ir-list li:nth-child(3) .main-ir-item .s-right em:before,
+	.main-ir-list li:nth-child(3) .main-ir-item .s-right em:after {white-space:nowrap;}
+	.main-ir-list li:nth-child(3) .main-ir-item .s-right em:before {bottom:-5px;left:-25px;}
+	.main-ir-list li:nth-child(3) .main-ir-item .s-right em:after {bottom:-23px;left:-40px;}
+
+	.main-ir-list li:nth-child(1) .main-ir-item .s-center em:after {top:147px;bottom:0;right:22px;width:50.3%;height:127px;border-top:20px solid #00c8ff;border-left:25px solid #00c8ff;}
+	.main-ir-list li:nth-child(3) .main-ir-item .s-center:before {width:38%;border-bottom:20px solid #00c8ff;}
+	.main-ir-list li:nth-child(3) .main-ir-item .s-center em:before,
+	.main-ir-list li:nth-child(3) .main-ir-item .s-center em:after {bottom:0;top:147px;right:22px;width:97%;height:147px;border-top:20px solid #00c8ff;}
+	.main-ir-list li:nth-child(3) .main-ir-item .s-right:before {top:0px;height:170px;}
+	.main-ir-list li:nth-child(3) .main-ir-item .s-right:after {top:20px;left:-55px;width:25px;background:#00c8ff;}
+
 	[ir-intro="2"]:before {transition-delay:.3s;background-image:url(/anchors/assets/images/index/bg_main_phase02_1.jpg);}
 	[ir-intro="3"]:before {transition-delay:.3s;background-image:url(/anchors/assets/images/index/bg_main_phase03.jpg);}
 	[ir-intro="4"]:before {transition-delay:.3s;background-image:url(/anchors/assets/images/index/bg_main_phase04.jpg);}
 	[ir-intro="5"]:before {transition-delay:.3s;background-image:url(/anchors/assets/images/index/bg_main_phase05.jpg);}
+
 
 	.main-step-navi li:nth-child(6) {display:none;}
 
