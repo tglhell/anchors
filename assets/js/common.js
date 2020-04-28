@@ -63,9 +63,17 @@ jQuery.event.add(window, 'load', function () {
 	});
 
 	$(window).on('orientationchange', function () {
-		aniItem(function(){
+		// aniItem(function(){
+		// 	location.reload();
+		// }, 100);
+		var orientation = window.orientation;
+		// 회전했을 경우 처리
+		if (orientation == 90 || orientation == -90) {
 			location.reload();
-		}, 100);
+		} else {
+			// 회전하지 않았을 경우 처리
+			location.reload();
+		} 
 	});
 
 	function irInsert() {

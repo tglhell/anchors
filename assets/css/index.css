@@ -292,7 +292,9 @@
 	.main-ir-list li:nth-child(3) .main-ir-item .s-right em:before {bottom:5px;left:-25px;}
 	.main-ir-list li:nth-child(3) .main-ir-item .s-right em:after {bottom:-13px;left:-40px;}
 
-	.main-ir-list li:nth-child(1) .main-ir-item .s-center em:after {top:146px;bottom:0;right:22px;width:50.3%;height:127px;border-top:20px solid #00c8ff;border-left:25px solid #00c8ff;}
+	.main-ir-list li:nth-child(1) .main-ir-item .s-center em:after {top:146px;bottom:0;right:22px;width:50.3%;height:126px;border-top:20px solid #00c8ff;border-left:25px solid #00c8ff;}
+	.main-ir-list li:nth-child(2) .main-ir-item .s-right:before,
+	.main-ir-list li:nth-child(2) .main-ir-item .s-right:after {height:146px;}
 	.main-ir-list li:nth-child(3) .main-ir-item .s-center em:before,
 	.main-ir-list li:nth-child(3) .main-ir-item .s-center em:after {bottom:0;top:146px;right:22px;width:115%;height:147px;border-top:20px solid #00c8ff;}
 	.main-ir-list li:nth-child(3) .main-ir-item .s-right:before {top:0px;height:169px;}
