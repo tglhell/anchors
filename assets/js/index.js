@@ -54,6 +54,16 @@ jQuery.event.add(window, 'load', function () {
 	function lPhase () {
 		irBox(function () {
 			mLogoOuter.addClass('l-phase');
+			$('.header-cont').prepend('<div class="chk-arrow">→</div>');
+			$('.header-cont').prepend('<div class="chk-circle"></div>');
 		}, 1000);
+
+		irBox(function () {
+			$('.chk-arrow, .chk-circle').addClass('active').fadeIn(800);
+		}, 5000);
+
+		irBox(function () {
+			$('.chk-arrow, .chk-circle').remove();
+		}, 10000);
 	}
 });
