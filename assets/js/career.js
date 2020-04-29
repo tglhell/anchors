@@ -22,11 +22,9 @@ $(function(){
 	var fileTarget = $('.upload');
 	fileTarget.on('change', function () {
 		if (window.FileReader) {
-			// 파일명 추출
 			var filename = $(this)[0].files[0].name;
 		}
 		else {
-			// Old IE 파일명 추출
 			var filename = $(this).val().split('/').pop().split('\\').pop();
 		};
 		$(this).siblings('.upload-name').val(filename);
@@ -48,7 +46,7 @@ $(function(){
 
 
 	$(window).resize(function(){
-		careerTop ();
+		careerTop();
 		acorChk();
 	});
 
@@ -61,7 +59,7 @@ $(function(){
 			vCont.removeAttr('style');
 		}
 	}
-	careerTop ();
+	careerTop();
 
 	function acorChk () {
 		if (winW > 767) {
