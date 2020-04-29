@@ -43,7 +43,7 @@
 
 .main .btn-contact-us {bottom:65px;width:36px;height:110px;background:url(/anchors/assets/images/common/img_side_contact2.png) no-repeat;}
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
 	.main-ir-list li:nth-child(1) .main-ir-item .s-center:before,
 	.main-ir-list li:nth-child(1) .main-ir-item .s-center:after {left:124px;border-bottom:20px solid #00c8ff;}
 	.main-ir-list li:nth-child(1) .main-ir-item .s-center:before {left:60px;}
@@ -265,7 +265,7 @@
 	[ir-intro="5"] li:nth-child(4) .main-ir-item .s-center:after {opacity:0;}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
 	.main-ir-wrap {height:584px;padding:100px 0 0;}
 	.main-ir-wrap .main-step-navi {margin-top:-90px;}
 	[ir-idx="2"] .main-step-navi {right:10px;}

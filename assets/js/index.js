@@ -14,7 +14,7 @@ jQuery.event.add(window, 'load', function () {
 		var _this = $(this),
 		stepIdx = _this.index() + 1;
 		if (!mStepNavi.is(':animated')) {
-			if (winW > 767) {
+			if (winW > 1024) {
 				_this.stop().animate({'overflow':'visible'}, 1500);
 			} else {
 				_this.stop().animate({'overflow':'visible'}, 1000);
@@ -30,7 +30,7 @@ jQuery.event.add(window, 'load', function () {
 
 	function naviWid() {
 		winW = $(window).width();
-		if (winW > 767) {
+		if (winW > 1024) {
 			for (i = 1; i < iCnt + 1; i++) {
 				$(function (i) {
 					irBox(function () {

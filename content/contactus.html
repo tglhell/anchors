@@ -37,8 +37,21 @@
 		<!-- s : container -->
 		<div class="container">
 			<div class="contact-us-top">
-				<div class="top-tit-box">
-					<h2 class="contact-us-tit">Contact us</h2>
+				<div class="contact-us-cont">
+					<div class="top-text-box">
+						<div class="top-skew-box">
+							<h2 class="top-tit"><strong>Contact us</strong></h2>
+							<ul class="top-desc">
+								<li>We are here to answer any question you many have.</li>
+								<li>Reach out to us and we’ll respond as soon as possible.</li>
+							</ul>
+							<ul class="contact-us-info">
+								<li><span>Telephone</span>02-332-9603</li>
+								<li><span>Fax</span>02-332-8847</li>
+								<li><span>Email</span>contact@d-anchors.com</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -46,7 +59,21 @@
 				
 			</div>
 			<style>
-				.contact-us-top {min-height:1200px;background:url(/anchors/assets/images/content/contactus/bg_contactus_top.jpg) no-repeat center center;}
+				html, body, .wrap, .container {height:100%;}
+				.contact-us-cont {max-width:1120px;height:100%;margin:0 auto;}
+				
+				.contact-us-top {height:100%;background:url(/anchors/assets/images/content/contactus/bg_contactus_top.jpg) no-repeat center top;}
+				.contact-us-top .contact-us-cont {padding-top:327px;}
+				.contact-us-top .top-text-box {height:100%;padding:135px 0 0 480px;background:url(/anchors/assets/images/content/contactus/bg_anchors_line.png) no-repeat 230px top;vertical-align:middle;}
+				.contact-us-top .top-skew-box {-webkit-transform:skewX(-35deg);transform:skewX(-35deg);}
+				.contact-us-top .top-tit {-webkit-transform:skewX(35deg);transform:skewX(35deg);font-size:30px;color:#080058;line-height:42px;}
+				.contact-us-top .top-tit strong {font-weight:800;}
+				.contact-us-top .top-desc {margin-top:2px;}
+				.contact-us-top .top-desc li {-webkit-transform:skewX(35deg);transform:skewX(35deg);font-size:18px;color:#000;line-height:27px;}
+				.contact-us-top .contact-us-info {margin-top:20px;}
+				.contact-us-top .contact-us-info li {-webkit-transform:skewX(35deg);transform:skewX(35deg);font-size:18px;font-weight:300;color:#fff;line-height:27px;}
+				.contact-us-top .contact-us-info li + li {margin-top:10px;}
+				.contact-us-top .contact-us-info li span {margin-right:20px;font-size:25px;line-height:27px;}
 			</style>
 		</div>
 		<!-- e : container -->
