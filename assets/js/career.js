@@ -8,7 +8,7 @@ $(function(){
 	careerList.on('click',function(){
 		var _this = $(this);
 		if (!careerList.is(':animated')) {
-			_this.stop().animate({'overflow':'visible'},1200);
+			_this.stop().animate({'overflow':'visible'}, 1200);
 			if (winW > 767) {
 				if (!_this.hasClass('on')) {
 					_this.addClass('on').removeClass('off').siblings().removeClass('on').addClass('off');
