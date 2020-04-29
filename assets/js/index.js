@@ -3,7 +3,7 @@ jQuery.event.add(window, 'load', function () {
 	mStepNavi = $('.main-step-navi li'),
 	irBox = setTimeout, iCnt = 6,
 	mLogoOuter = $('.main-logo-outer');
-	mainHeight ();
+	mainHeight();
 	
 	$(window).resize(function(){
 		mainHeight();
