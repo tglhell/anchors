@@ -7,7 +7,7 @@ jQuery.event.add(window, 'load', function () {
 	
 	$(window).resize(function(){
 		mainHeight();
-		naviWid();
+		// naviWid();
 	});
 	
 	mStepNavi.click(function(){
