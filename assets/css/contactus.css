@@ -18,3 +18,12 @@
 .contact-us-mid .outer-img img {width:100%;}
 .contact-us-mid .contact-us-list {display:inline-block;width:60%;padding-left:40px;vertical-align:middle;}
 .contact-us-mid .contact-us-list li {font-size:20px;color:#080058;line-height:40px;}
+
+/* map style */
+#map {transition:none;position:relative;}
+#map:before {transition:.5s;content:'';position:absolute;top:0;bottom:0;left:0;right:0;z-index:9;background:rgba(0, 0, 0, .5);}
+#map:after {transition:.5s;content:'Press Shift + Scroll';-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);position:absolute;top:50%;left:50%;z-index:9;font-size:24px;color:#fff;line-height:32px;}
+#map.dim:before,
+#map.dim:after {transition:.3s;opacity:0;z-index:-1;}
+#map * {transition:none;}
+#map .btn-large-map {position:absolute;top:15px;right:15px;z-index:10;padding:10px;background:rgba(0, 0, 0, .5);font-size:14px;color:#fff;line-height:20px;}

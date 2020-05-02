@@ -12,7 +12,6 @@
 	<script src="/anchors/assets/js/lib/jquery.min.js"></script>
 	<script src="/anchors/assets/js/lib/jquery-ui.min.js"></script>
 	<script src="/anchors/assets/js/common.js"></script>
-	<!-- <script src="/anchors/assets/js/contactus.js"></script> -->
 </head>
 
 <body>
@@ -77,94 +76,18 @@
 					</div>
 
 					<div class="contact-us-mid" style="margin-top:50px;">
-						<div class="outer-img"><img src="/anchors/assets/images/content/contactus/img_contactus_list03.png" alt="left image"></div>
+						<div class="outer-img">
+							<!-- <img src="/anchors/assets/images/content/contactus/img_contactus_list03.png" alt="left image"> -->
+							<div id="map" style="display:block;width:450px;height:300px;">
+								<a href="http://kko.to/TO3BjqR0M" target="_blank" class="btn-large-map">크게보기</a>
+							</div>
+						</div>
 						<ul class="contact-us-list">
 							<li>e-Business Consulting</li>
 							<li>Web &amp; App service Development &amp; Maintenance</li>
 							<li>AEM / Global Project Consulting &amp; Development</li>
 						</ul>
 					</div>
-
-					<div id="map" style="display:block;width:500px;height:400px;">
-						<a href="http://kko.to/TO3BjqR0M" target="_blank" class="btn-large-map">크게보기</a>
-					</div>
-					<style>
-						#map {
-							transition: none;
-							position: relative;
-							overflow: hidden;
-							margin-top: 50px;
-							border-radius: 15px;
-						}
-					
-						#map:before {
-							transition: .5s;
-							content: '';
-							position: absolute;
-							top: 0;
-							bottom: 0;
-							left: 0;
-							right: 0;
-							z-index: 9;
-							background: rgba(0, 0, 0, .5);
-						}
-					
-						#map:after {
-							transition: .5s;
-							content: 'Press Shift + Scroll';
-							-webkit-transform: translate(-50%, -50%);
-							transform: translate(-50%, -50%);
-							position: absolute;
-							top: 50%;
-							left: 50%;
-							z-index: 9;
-							font-size: 30px;
-							color: #fff;
-							line-height: 42px;
-						}
-					
-						#map.dim:before,
-						#map.dim:after {
-							transition: .3s;
-							opacity: 0;
-							z-index: -1;
-						}
-					
-						#map * {
-							transition: none;
-						}
-					
-						#map .btn-large-map {
-							position: absolute;
-							top: 15px;
-							right: 15px;
-							z-index: 10;
-							padding: 10px;
-							background: rgba(0, 0, 0, .5);
-							font-size: 14px;
-							color: #fff;
-							line-height: 20px;
-						}
-					</style>
-					
-					<script>
-						$(function () {
-							$(document).on('keydown keyup', function () {
-								var keyCode = event.keyCode;
-								if (event.type == 'keydown') {
-									if (event.shiftKey) {
-										$('#map').addClass('dim');
-									}
-								} else {
-									$('#map').removeClass('dim');
-								}
-							});
-
-							$('.btn-large-map').click(function () {
-								$('#map').removeClass('dim');
-							});
-						});
-					</script>
 				</div>
 			</div>
 		</div>
@@ -203,20 +126,7 @@
 	<!-- e : wrap -->
 
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=79abf44f481a8c739067df916aa4408b"></script>
-	<script>
-		var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-		var options = { //지도를 생성할 때 필요한 기본 옵션
-			center: new kakao.maps.LatLng(37.55410761985322, 126.91242520213594), //지도의 중심좌표.
-			level: 2 //지도의 레벨(확대, 축소 정도)
-		};
-		var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-		var marker = new kakao.maps.Marker({
-			// 지도 중심좌표에 마커를 생성합니다 
-			position: map.getCenter()
-		});
-		// 지도에 마커를 표시합니다
-		marker.setMap(map);
-	</script>
+	<script src="/anchors/assets/js/map.js"></script>
 </body>
 
 </html>
