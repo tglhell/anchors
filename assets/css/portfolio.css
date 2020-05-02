@@ -50,6 +50,10 @@
 .portfolio-slide .title-cont {position:absolute;bottom:155px;left:150px;z-index:2;display:block;}
 .portfolio-slide .title-cont .slide-tit {display:block;padding-left:55px;background:url(/anchors/assets/images/content/portfolio/ico_sl_tit.png) no-repeat left center;font-size:55px;font-weight:700;color:#fff;line-height:60px;}
 .portfolio-slide .title-cont .slide-desc {display:block;margin-top:20px;font-size:20px;font-weight:300;color:#fff;line-height:28px;}
+.portfolio-slide .swiper-pagination-bullet {opacity:1;position:relative;width:25px;padding:15px 0;border-radius:0;background:transparent;}
+.portfolio-slide .swiper-pagination-bullet:focus {outline:none;}
+.portfolio-slide .swiper-pagination-bullet:before {content:'';opacity:.5;position:absolute;top:50%;left:0;right:0;height:2px;margin-top:-1px;background:#fff;}
+.portfolio-slide .swiper-pagination-bullet-active:before {opacity:1;}
 .portfolio-list-outer {position:relative;padding:0 25px;z-index:2;background:#fff;}
 .portfolio-list-box {max-width:1440px;margin:0 auto;padding:70px 0 136px;}
 .portfolio-list-box .pf-title {margin-bottom:33px;font-size:60px;color:#070057;line-height:74px;text-align:center;}
@@ -108,6 +112,7 @@
 
 @media (max-width:1920px) and (min-width: 768px) {
 	.portfolio-slide .title-cont {bottom:8.072917vw;left:7.8125vw;}
+	.portfolio-slide .swiper-pagination-bullet {padding:0.78125vw;}
 	.portfolio-top-outer .btn-portfolio-control {bottom:9.375vw;right:7.291667vw;}
 }
 
@@ -126,6 +131,7 @@
 
 @media (max-width: 767px) {
 	.portfolio-slide .swiper-slide img {width:100%;}
+	.portfolio-slide .swiper-pagination-bullet {width:20px;}
 	.portfolio-slide .title-cont {bottom:100px;left:30px;}
 	.portfolio-slide .title-cont .slide-tit {padding-left:40px;background-size:30px 34px;font-size:32px;line-height:40px;}
 	.portfolio-slide .title-cont .slide-desc {margin-top:10px;font-size:14px;line-height:22px;}
