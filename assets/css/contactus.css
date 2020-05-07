@@ -1,7 +1,7 @@
 .contact-us-cont {overflow:hidden;max-width:1120px;margin:0 auto;}
 .contact-us-top {height:1200px;background:url(/anchors/assets/images/content/contactus/bg_contactus_top.jpg) no-repeat center top;}
 .contact-us-top .contact-us-cont {padding-top:327px;}
-.contact-us-top .top-text-box {height:100%;padding:115px 0 0 480px;background:url(/anchors/assets/images/content/contactus/bg_anchors_line.png) no-repeat 230px top;vertical-align:middle;}
+.contact-us-top .top-text-box {height:425px;padding:115px 0 0 480px;background:url(/anchors/assets/images/content/contactus/bg_anchors_line.png) no-repeat 230px top;vertical-align:middle;}
 .contact-us-top .top-skew-box {-webkit-transform:skewX(-35deg);transform:skewX(-35deg);}
 .contact-us-top .top-tit {-webkit-transform:skewX(35deg);transform:skewX(35deg);font-size:46px;color:#080058;line-height:58px;}
 .contact-us-top .top-tit strong {font-weight:800;}
@@ -51,6 +51,7 @@
 }
 
 @media (max-width: 1120px) and (min-width: 768px) {
+	.contact-us-top .top-text-box {padding:0;text-align:center;}
 	.contact-us-mid:before {top:-25px;right:-25px;width:50px;height:50px;}
 	.contact-us-mid:nth-child(even):before {left:-25px;}
 	.contact-us-mid .contact-us-list li {font-size:1.785714vw;line-height:3.571428vw;}
