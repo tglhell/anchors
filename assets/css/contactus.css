@@ -22,14 +22,14 @@
 .contact-us-mid .map-info-box {display:inline-block;width:60%;padding:0 40px;vertical-align:middle;}
 .contact-us-mid .contact-us-list {display:inline-block;width:60%;padding-left:40px;vertical-align:middle;}
 .contact-us-mid .contact-us-list li {font-size:20px;color:#080058;line-height:40px;}
-.contact-us-mid:nth-child(even) .contact-us-list li {font-size:24px;color:#080058;line-height:40px;}
+.contact-us-mid:nth-child(even) .contact-us-list li {font-size:24px;}
 .contact-us-mid .map-title-logo {width:120px;}
 .contact-us-mid .map-title-logo img {width:100%;}
 .contact-us-mid .contact-us-map-info {position:relative;margin-top:50px;}
 .contact-us-mid .contact-us-map-info:before {content:'';position:absolute;top:-25px;left:0;right:0;height:1px;background:#000;}
 .contact-us-mid .contact-us-map-info li {font-size:17px;color:#000;line-height:28px;}
 .contact-us-mid .contact-us-map-info li + li {margin-top:10px;}
-.contact-us-mid .contact-us-map-info li > strong {display:inline-block;min-width:170px;font-size:20px;font-weight:800;color:#080058;line-height:28px;}
+.contact-us-mid .contact-us-map-info li > strong {display:inline-block;width:170px;font-size:20px;font-weight:800;color:#080058;line-height:28px;}
 .contact-us-mid .btn-inquiry {transition:all .1s linear;position:absolute;right:10px;bottom:10px;box-shadow:2px 2px 0 rgba(0,0,0,.15);font-size:12px;color:#fff;line-height:16px;}
 .contact-us-mid .btn-inquiry:hover {transition:all .1s linear;bottom:9px;box-shadow:0 0 0 rgba(0,0,0,0);}
 .contact-us-mid:nth-child(even) .btn-inquiry {right:calc(40% + 10px);}
@@ -48,4 +48,21 @@
 
 @media (max-width: 1920px) {
 	.contact-us-outer {padding:13.020833vw 8.645833vw;}
+}
+
+@media (max-width: 1120px) and (min-width: 768px) {
+	.contact-us-mid:before {top:-25px;right:-25px;width:50px;height:50px;}
+	.contact-us-mid:nth-child(even):before {left:-25px;}
+	.contact-us-mid .contact-us-list li {font-size:1.785714vw;line-height:3.571428vw;}
+	.contact-us-mid:nth-child(even) .contact-us-list li {font-size:2.142857vw;}
+	.contact-us-mid .btn-inquiry {font-size:1.071428vw;line-height:1.428571vw;}
+	.contact-us-mid .btn-inquiry strong {font-size:1.517857vw;line-height:1.874999vw;}
+	.contact-us-mid .map-title-logo {width:10.714286vw;}
+	.contact-us-mid .contact-us-map-info {margin-top:2.678571vw;}
+	.contact-us-mid .contact-us-map-info:before {top:-1.339286vw;}
+	.contact-us-mid .contact-us-map-info li {font-size:1.517857vw;line-height:2.499999vw;}
+	.contact-us-mid .contact-us-map-info li + li {margin-top:0.892857vw;}
+	.contact-us-mid .contact-us-map-info li > strong {width:15.178571vw;font-size:1.785714vw;line-height:2.499999vw;}
+	#map {height:22.053571vw;}
+	#map:after {font-size:2.142857vw;line-height:2.857143vw;}
 }
