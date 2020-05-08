@@ -38,3 +38,17 @@
 	.detail-btm-img {margin-top:-62.5vw;}
 	.detail-btm-img img {width:63.489583vw;}
 }
+
+@media (max-width: 767px) {
+	.portfolio-detail-wrap {background-image:url(/anchors/assets/images/content/detail/bg_detail_all_mo.png);}
+	.detail-step-outer {max-width:none;height:194.444444vw;padding:58.670143vw 7.040417vw 0;}
+	.detail-step-outer + .detail-step-outer {padding:58.670143vw 7.040417vw 0;}
+	.detail-step-outer + .detail-step-outer .btn-box {display:none;}
+	.detail-step-outer .detail-step-eyebrow {margin-bottom:4.041721vw;font-size:3.259452vw;line-height:4.172099vw;}
+	.detail-step-outer .detail-step-tit {font-size:7.822686vw;line-height:11.082138vw;}
+	.detail-step-outer .detail-step-desc {margin-top:16.518905vw;font-size:2.607562vw;line-height:3.650586vw;}
+	.detail-step-outer .btn-box .btn-back {top:-62.322917vw;right:7.040417vw;font-size:3.911343vw;color:#080058;}
+	.detail-step-outer .btn-box .btn-back:before {background-image:url(/anchors/assets/images/content/detail/ico_back_arrow_mo.png);}
+	.detail-step-outer .btn-box .btn-site {width:26.597132vw;margin:8vw 7.040417vw;font-size:3.911343vw;}
+	.detail-step-outer .btn-box .btn-site:after {width:26.597132vw;}
+}

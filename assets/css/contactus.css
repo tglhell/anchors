@@ -45,6 +45,7 @@
 #map.dim:after {transition:.3s;opacity:0;z-index:-1;}
 #map * {transition:none;}
 #map .btn-large-map {position:absolute;top:15px;right:15px;z-index:10;padding:10px;background:rgba(0, 0, 0, .5);font-size:14px;color:#fff;line-height:20px;}
+#map .btn-large-map.mo {display:none;}
 
 @media (max-width: 1920px) {
 	.contact-us-outer {padding:13.020833vw 8.645833vw;}
@@ -66,4 +67,9 @@
 	.contact-us-mid .contact-us-map-info li > strong {width:15.178571vw;font-size:1.785714vw;line-height:2.499999vw;}
 	#map {height:22.053571vw;}
 	#map:after {font-size:2.142857vw;line-height:2.857143vw;}
+}
+
+@media (max-width: 767px) {
+	#map .btn-large-map.pc {display:none;}
+	#map .btn-large-map.mo {display:block;}
 }
