@@ -22,10 +22,10 @@
 .main-ir-list li:nth-child(3) {z-index:5;}
 .main-ir-list li:nth-child(4) {z-index:4;}
 .main-ir-list li .main-ir-item {position:relative;z-index:4;display:table;table-layout:fixed;width:100%;height:100%;font-size:0;}
-.main-ir-list li .main-ir-item:before {content:'';position:absolute;top:0;bottom:0;left:0;right:0;z-index:-1;opacity:0;max-width:1820px;height:588px;background:url(/anchors/assets/images/index/bg_main_phase02_1.jpg) no-repeat center center;background-size:1820px 588px;}
-.main-ir-list li:nth-child(2) .main-ir-item:before {background-image:url(/anchors/assets/images/index/bg_main_phase03.jpg);}
-.main-ir-list li:nth-child(3) .main-ir-item:before {background-image:url(/anchors/assets/images/index/bg_main_phase04.jpg);}
-.main-ir-list li:nth-child(4) .main-ir-item:before {background-image:url(/anchors/assets/images/index/bg_main_phase05.jpg);}
+.main-ir-list li:before {content:'';position:absolute;top:0;bottom:0;left:0;right:0;z-index:-1;opacity:0;max-width:1820px;height:588px;background:url(/anchors/assets/images/index/bg_main_phase02_1.jpg) no-repeat center center;background-size:1820px 588px;}
+.main-ir-list li:nth-child(2):before {background-image:url(/anchors/assets/images/index/bg_main_phase03.jpg);}
+.main-ir-list li:nth-child(3):before {background-image:url(/anchors/assets/images/index/bg_main_phase04.jpg);}
+.main-ir-list li:nth-child(4):before {background-image:url(/anchors/assets/images/index/bg_main_phase05.jpg);}
 .main-ir-list li .main-ir-item span {transition:1s;position:relative;z-index:3;color:#080058;}
 .main-ir-list li .main-ir-item span em {color:#080058;}
 .main-ir-list li .main-ir-item .s-left,
