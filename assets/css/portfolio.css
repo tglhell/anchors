@@ -58,7 +58,7 @@
 .portfolio-list-box {max-width:1440px;margin:0 auto;padding:70px 0 136px;}
 .portfolio-list-box .pf-title {margin-bottom:33px;font-size:60px;color:#070057;line-height:74px;text-align:center;}
 .portfolio-list-box .pf-title strong {font-weight:800;}
-.portfolio-list-box .pf-desc {font-size:16px;color:#666;line-height:24px;text-align:center;}
+.portfolio-list-box .pf-desc {font-size:17px;color:#666;line-height:24px;text-align:center;}
 .portfolio-list {overflow:hidden;margin-top:-15px;}
 .portfolio-list li {opacity:1;margin-top:100px;}
 .portfolio-list li.disabled {opacity:0;}
