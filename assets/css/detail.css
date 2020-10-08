@@ -44,6 +44,7 @@
 	.detail-step-outer {max-width:none;height:194.444444vw;padding:58.670143vw 7.040417vw 0;}
 	.detail-step-outer + .detail-step-outer {padding:58.670143vw 7.040417vw 0;}
 	.detail-step-outer + .detail-step-outer .btn-box {display:none;}
+	.detail-step-outer + .detail-step-outer + .detail-step-outer {padding-top:82.670143vw;}
 	.detail-step-outer .detail-step-eyebrow {margin-bottom:4.041721vw;font-size:3.259452vw;line-height:4.172099vw;}
 	.detail-step-outer .detail-step-tit {font-size:7.822686vw;line-height:11.082138vw;}
 	.detail-step-outer .detail-step-desc {margin-top:16.518905vw;font-size:2.607562vw;line-height:3.650586vw;}
@@ -51,4 +52,12 @@
 	.detail-step-outer .btn-box .btn-back:before {background-image:url(/anchors/assets/images/content/detail/ico_back_arrow_mo.png);}
 	.detail-step-outer .btn-box .btn-site {width:26.597132vw;margin:8vw 7.040417vw;font-size:3.911343vw;}
 	.detail-step-outer .btn-box .btn-site:after {width:26.597132vw;}
+
+	.detail-step-outer .detail-step-sub {font-size:3.9113vw;line-height:6.2581vw;}
+	.detail-mid-img {width:100%;height:auto;margin:3.9113vw 0 0;}
+
+	.detail-step-btm-txt {-webkit-transform:none;transform:none;width:100%;}
+	.detail-step-btm-txt p {-webkit-transform:none;transform:none;font-size:3.9113vw;line-height:6.2581vw;}
+
+	.detail-btm-img {display:none;}
 }

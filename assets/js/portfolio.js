@@ -67,7 +67,7 @@ jQuery.event.add(window, 'load', function () {
 	btnMoreItem.click(function () {
 		posItem.removeClass('disabled');
 		posItem.parent().css('height', 'auto');
-		$(this).fadeOut(ftwVal * 5);
+		$(this).parent().hide();
 	});
 
 	toggleClass.click(function () {

@@ -1,15 +1,15 @@
 $(function(){
-	$(document).on('keydown keyup', function () {
-		if (event.type == 'keydown') {
-			if (event.shiftKey) {
-				$('#map').addClass('dim');
-			}
-		} else {
-			$('#map').removeClass('dim');
-		}
-	});
+	var autoHgtItem = $('.contact-us-list, .map-info-box');
 
-	$('.btn-large-map').click(function () {
-		$('#map').removeClass('dim');
+	function listHgt () {
+		imgHgt = parseInt($('.contact-us-mid .outer-img').outerHeight());
+		autoHgtItem.css('height', imgHgt);
+	}
+	listHgt ();
+	
+	$(window).resize(function(){
+		setTimeout(function(){
+			listHgt ();
+		}, 700);
 	});
 });

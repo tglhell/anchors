@@ -154,6 +154,6 @@
 	.portfolio-list .project-item .project-info .btm-txt {bottom:10px;right:10px;font-size:13px;line-height:18px;}
 	.portfolio-list .project-name {margin-top:10px;font-size:14px;line-height:20px;}
 	.portfolio-list-box .btn-box {margin-top:70px;}
-	.portfolio-list-box .btn-box .btn-more {min-width:200px;padding:0 15px;}
-	.portfolio-list-box .btn-box .btn-more span {font-size:12px;line-height:40px;}
+	.portfolio-list-box .btn-box .btn-more {min-width:200px;}
+	.portfolio-list-box .btn-box .btn-more span {padding:0 15px;font-size:12px;line-height:40px;}
 }

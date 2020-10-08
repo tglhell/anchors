@@ -451,7 +451,7 @@ caption {
 @media (max-width: 767px) {
 	.header-cont {height:60px;padding:0 20px;}
 	.header-cont .h-logo {z-index:6;padding:15px 0;}
-	.header-cont .h-logo a {width:70px;height:auto;}
+	.header-cont .h-logo a {width:80px;height:auto;}
 	.header-cont .h-logo a img {vertical-align:middle;}
 	.nav {top:0;right:0;width:100%;height:60px;text-align:center;}
 	.nav:before {-webkit-transform:none;transform:none;left:0;}
