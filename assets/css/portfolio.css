@@ -22,7 +22,7 @@
 .portfolio-top-outer.dim:before {transition:opacity .5s linear;-webkit-transform:translateY(0);transform:translateY(0);opacity:1;}
 .portfolio-top-outer .btn-portfolio-in {position:absolute;left:50%;bottom:65px;z-index:2;margin-left:-15px;color:#fff;}
 .portfolio-top-outer .btn-portfolio-in:focus {outline:none;}
-.portfolio-top-outer .btn-portfolio-in span {position:relative;display:inline-block;font-size:15px;color:#fff;line-height:36px;vertical-align:top;}
+.portfolio-top-outer .btn-portfolio-in span {position:relative;display:inline-block;font-size:13px;color:#fff;line-height:36px;vertical-align:top;}
 .portfolio-top-outer .btn-portfolio-in:hover span {color:#00c8ff;}
 .portfolio-top-outer .btn-portfolio-in span:before,
 .portfolio-top-outer .btn-portfolio-in span:after {content:'';position:absolute;top:32px;left:50%;width:1px;height:20px;background:#fff;}

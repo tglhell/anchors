@@ -27,6 +27,30 @@ jQuery.event.add(window, 'load', function () {
 		}
 	});
 
+	$('.main').on('mousewheel scroll', function(e){
+		if ($(mLogoOuter).hasClass('m-wheel')) {
+			var numIdx = $('.main-step-navi li.on').index();
+			if (!mIrList.is(':animated')) {
+				mIrList.animate({ 'overflow': 'visible' }, 1200);
+				if (e.originalEvent.wheelDelta < 0) {
+					if (numIdx !== $(this.length) && mIrList.attr('ir-intro') < 6) {
+						mStepNavi.eq(numIdx + 1).addClass('on').siblings().removeClass('on');
+						mIrList.attr('ir-intro', (numIdx + 1) + 1);
+						if (mIrList.attr('ir-intro') == mStepNavi.length) {
+							lPhase();
+						}
+					}
+				} else {
+					if (numIdx !== 0) {
+						mStepNavi.eq(numIdx - 1).addClass('on').siblings().removeClass('on');
+						mIrList.attr('ir-intro', (numIdx + 1) - 1);
+						mLogoOuter.removeClass('l-phase');
+					}
+				}
+			}
+		}
+	});
+
 	function naviWid() {
 		winW = $(window).width();
 		if (winW > 1024) {
@@ -52,7 +76,7 @@ jQuery.event.add(window, 'load', function () {
 
 	function lPhase () {
 		irBox(function () {
-			mLogoOuter.addClass('l-phase');
+			mLogoOuter.removeClass('m-wheel').addClass('l-phase');
 			$('.header-cont').prepend('<div class="chk-arrow">→</div>');
 			$('.header-cont').prepend('<div class="chk-circle"></div>');
 		}, 1000);
@@ -63,6 +87,7 @@ jQuery.event.add(window, 'load', function () {
 
 		irBox(function () {
 			$('.chk-arrow, .chk-circle').remove();
+			mLogoOuter.addClass('m-wheel');
 		}, 10000);
 	}
 });
