@@ -27,7 +27,7 @@ jQuery.event.add(window, 'load', function () {
 		}
 	});
 
-	$('.main').on('mousewheel scroll', function(e){
+	$('.main').on('mousewheel', function(e){
 		if ($(mLogoOuter).hasClass('m-wheel')) {
 			var numIdx = $('.main-step-navi li.on').index();
 			if (!mIrList.is(':animated')) {
