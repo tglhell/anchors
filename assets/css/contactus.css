@@ -1,3 +1,6 @@
+.contact-us-top .top-skew-box[ir] {-webkit-transform:translateX(-100px) skewX(-35deg);transform:translateX(-100px) skewX(-35deg);}
+.contact-us-top .top-skew-box[ir-idx="2"] {transition:all 1s cubic-bezier(0.770, 0.000, 0.175, 1.000);transition-delay:1.2s;opacity:1;-webkit-transform:translateX(0px) skewX(-35deg);transform:translateX(0px) skewX(-35deg);}
+
 .contact-us-cont {overflow:hidden;max-width:1120px;margin:0 auto;}
 .contact-us-top {height:1200px;background:url(/anchors/assets/images/content/contactus/bg_contactus_top.jpg) no-repeat center top;}
 .contact-us-top .contact-us-cont {padding-top:327px;}
@@ -53,6 +56,8 @@
 }
 
 @media (max-width: 1120px) {
+	.contact-us-top .top-skew-box[ir] {-webkit-transform:translateY(50px);transform:translateY(50px);}
+	.contact-us-top .top-skew-box[ir-idx="2"] {-webkit-transform:translateY(0px);transform:translateY(0px);}
 	.contact-us-top .top-skew-box,
 	.contact-us-top .top-tit,
 	.contact-us-top .top-desc li,
