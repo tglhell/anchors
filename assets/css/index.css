@@ -9,7 +9,7 @@
 .main .chk-arrow.active {animation:chk-arrow 1s linear 5;}
 .main .chk-circle.active {opacity:1;position:absolute;top:-100px;right:-80px;border:2px solid #3781aa;border-color:#fff;width:300px;height:300px;-webkit-transform-origin:50% 48%;transform-origin:50% 48%;border-radius:43%;animation:drift 1s linear 5;}
 
-.main-ir-wrap[ir] {-webkit-transform:translate(0, 0);opacity:0;}
+.main-ir-wrap[ir] {-webkit-transform:translate(0, 0);transform:translate(0, 0);opacity:0;}
 [ir-idx="2"] {transition:all 1.2s ease-in-out;transition-delay:.8s;opacity:1;}
 [ir-idx="6"] {transition:all .7s ease-in-out;transition-delay:1.2s;}
 
