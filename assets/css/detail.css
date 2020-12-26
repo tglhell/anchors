@@ -1,4 +1,4 @@
-.portfolio-detail-wrap {max-width:100%;margin:0 auto;background:url(/anchors/assets/images/content/detail/bg_detail_all.png) no-repeat center center;background-size:100% auto;}
+.portfolio-detail-wrap {max-width:100%;width: 1920px;margin:0 auto;background:url(/anchors/assets/images/content/detail/bg_detail_all.png) no-repeat center center;background-size:100% auto;}
 .detail-step-outer {position:relative;max-width:1120px;height:1200px;margin:0 auto;padding-top:364px;}
 .detail-step-outer + .detail-step-outer {padding-top:324px;}
 .detail-step-outer .detail-step-eyebrow {margin-bottom:30px;font-size:25px;color:#080058;line-height:32px;}
