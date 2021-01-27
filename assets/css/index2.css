@@ -52,11 +52,10 @@
 .main-scr-text {
 	position: fixed;
 	top: 0;
-	left: 0;
-	right: 100px;
-	font-size: 100px;
+	right: 350px;
+	font-size: 150px;
 	color: transparent;
-	line-height: 1.3;
+	line-height: 1.5;
 	z-index: 20;
 	pointer-events: none;
 }
@@ -65,5 +64,6 @@
 	transform: rotate(-180deg);
 	height: 100%;
 	writing-mode: vertical-lr;
-	-webkit-text-stroke: 1px #fff
+	-webkit-text-stroke: 1px #fff;
+	white-space: nowrap;
 }
