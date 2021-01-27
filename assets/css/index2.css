@@ -1,0 +1,72 @@
+[ir] {
+	transform: rotate(45deg);
+	position: fixed;
+	top: -200%;
+	bottom: -200%;
+	left: -200%;
+	right: -200%;
+	background-color: #fff;
+	opacity: 1;
+}
+
+[ir] p {
+	opacity: 1;
+}
+
+[ir-idx="1"] {
+	transition: all 1.2s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	transition-delay: .8s;
+	transform: rotate(45deg);
+	left: 50% !important;
+	right: 50% !important;
+	background-color: #fff;
+}
+
+[ir-idx="1"] p {
+	transition: all .5s ease-in-out;
+	transition-delay: .5s;
+	opacity: 0;
+}
+
+.main-ir-wrap {
+	min-height: 100vh;
+	background-color: #111;
+}
+
+.main-page-logo {
+	position: fixed;
+	top: -200%;
+	bottom: -200%;
+	left: -200%;
+	right: -200%;
+	z-index: 20;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-page-logo p {
+	position: absolute;
+	z-index: 10;
+	transform: rotate(-45deg);
+	font-size: 50px;
+	color: #000;
+	line-height: 1.3;
+}
+
+.main-scr-text {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	font-size: 100px;
+	color: #fff;
+	line-height: 1.3;
+	z-index: 20;
+}
+
+.main-scr-text marquee {
+	transform: rotate(-180deg);
+	height: 100%;
+	writing-mode: vertical-lr;
+}
