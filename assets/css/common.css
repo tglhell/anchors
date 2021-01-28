@@ -5,37 +5,37 @@
 
 /* font initializing */
 @font-face {
-	font-family:'IBMPlexSans';
+	font-family:'NanumSquare';
+	font-weight: 300;
+	src: url(/anchors/assets/fonts/NanumSquareL.eot);
+	src: url(/anchors/assets/fonts/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+				url(/anchors/assets/fonts/NanumSquareL.woff) format('woff'),
+				url(/anchors/assets/fonts/NanumSquareL.ttf) format('truetype');
+}
+@font-face {
+	font-family:'NanumSquare';
 	font-weight: 400;
-	src: url(/anchors/assets/fonts/IBMPlexSans-Regular.eot);
-	src: url(/anchors/assets/fonts/IBMPlexSans-Regular.eot?#iefix) format('embedded-opentype'),
-				url(/anchors/assets/fonts/IBMPlexSans-Regular.woff) format('woff'),
-				url(/anchors/assets/fonts/IBMPlexSans-Regular.ttf) format('truetype');
+	src: url(/anchors/assets/fonts/NanumSquareR.eot);
+	src: url(/anchors/assets/fonts/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+				url(/anchors/assets/fonts/NanumSquareR.woff) format('woff'),
+				url(/anchors/assets/fonts/NanumSquareR.ttf) format('truetype');
 }
 @font-face {
-	font-family:'IBMPlexSans';
-	font-weight: 500;
-	src: url(/anchors/assets/fonts/IBMPlexSans-Medium.eot);
-	src: url(/anchors/assets/fonts/IBMPlexSans-Medium.eot?#iefix) format('embedded-opentype'),
-				url(/anchors/assets/fonts/IBMPlexSans-Medium.woff) format('woff'),
-				url(/anchors/assets/fonts/IBMPlexSans-Medium.ttf) format('truetype');
+	font-family:'NanumSquare';
+	font-weight: 700;
+	src: url(/anchors/assets/fonts/NanumSquareB.eot);
+	src: url(/anchors/assets/fonts/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+				url(/anchors/assets/fonts/NanumSquareB.woff) format('woff'),
+				url(/anchors/assets/fonts/NanumSquareB.ttf) format('truetype');
 }
 @font-face {
-	font-family:'IBMPlexSans';
-	font-weight: 600;
-	src: url(/anchors/assets/fonts/IBMPlexSans-SemiBold.eot);
-	src: url(/anchors/assets/fonts/IBMPlexSans-SemiBold.eot?#iefix) format('embedded-opentype'),
-				url(/anchors/assets/fonts/IBMPlexSans-SemiBold.woff) format('woff'),
-				url(/anchors/assets/fonts/IBMPlexSans-SemiBold.ttf) format('truetype');
-}
-/* @font-face {
-	font-family:'IBMPlexSans';
+	font-family:'NanumSquare';
 	font-weight: 800;
 	src: url(/anchors/assets/fonts/NanumSquareEB.eot);
 	src: url(/anchors/assets/fonts/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
 				url(/anchors/assets/fonts/NanumSquareEB.woff) format('woff'),
 				url(/anchors/assets/fonts/NanumSquareEB.ttf) format('truetype');
-} */
+}
 
 /* base */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
@@ -176,7 +176,7 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, dl, dd, figure, form, field
 	font-weight:normal;
 }
 html, body {
-	font-family:'IBMPlexSans', sans-serif;
+	font-family:'NanumSquare', Malgun Gothic, Apple-Gothic, Tahoma, Helvetica, sans-serif;
 	font-size:14px;
 	line-height:1.2;
 	color:#444;
@@ -189,13 +189,13 @@ body::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
 button, input, select, textarea {
-	font-family:'IBMPlexSans', sans-serif;
+	font-family:'NanumSquare', Malgun Gothic, Apple-Gothic, Tahoma, Helvetica, sans-serif;
 }
 pre,
 code,
 kbd,
 samp {
-	font-family:'IBMPlexSans', sans-serif;
+	font-family:'NanumSquare', Malgun Gothic, Apple-Gothic, Tahoma, Helvetica, sans-serif;
 	font-size:1em;
 }
 strong {
