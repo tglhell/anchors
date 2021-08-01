@@ -95,6 +95,7 @@
 	height: 40.364583vw;
 	background: #fff;
 	overflow: hidden;
+	cursor: pointer;
 }
 
 .career-list:nth-child(2n-1) {
