@@ -40,19 +40,43 @@ jQuery.event.add(window, 'load', function () {
 	$(window).scroll(function () {
 		var scrPos = $(this).scrollTop(),
 		scrPosSum = $(document).height() - $(window).height() - $('.footer').height();
+		// if (scrPos > 0) {
+		// 	$('.header').addClass('scroll');
+		// 	scrTop.addClass('active');
+		// } else {
+		// 	$('.header').removeClass('scroll');
+		// 	scrTop.removeClass('active');
+		// }
 		if (scrPos > 0) {
 			$('.header').addClass('scroll');
 			scrTop.addClass('active');
+			if (scrPos > scrPosSum) {
+				if (winWid > 767) {
+					scrTop.css({ 'bottom': (scrPos - scrPosSum) + 50, 'transition': 'none' });
+				} else {
+					scrTop.css({ 'bottom': (scrPos - scrPosSum) + 20, 'transition': 'none' });
+				}
+			} else {
+				if (winWid > 767) {
+					scrTop.attr('style', 'bottom:50px !important;transition:none;');
+				} else {
+					scrTop.attr('style', 'bottom:20px !important;transition:none;');
+				}
+			}
 		} else {
 			$('.header').removeClass('scroll');
-			scrTop.removeClass('active');
+			scrTop.removeClass('active').removeAttr('style');
 		}
 
 		if ($('.main').length == 0) {
 			if (scrPos >= scrPosSum) {
 				$('.wrap').addClass('side-fixed');
+				$('.btm-copyright').css({'bottom':(scrPos - scrPosSum) + 50, 'transition':'none'});
+				$('.btn-contact-us').css({'bottom':(scrPos - scrPosSum) + 50, 'transition':'none'});
 			} else {
 				$('.wrap').removeClass('side-fixed');
+				$('.btm-copyright').attr('style', 'bottom:50px !important;transition:none;');
+				$('.btn-contact-us').attr('style', 'bottom:50px !important;transition:none;');
 			}
 		}
 	});
