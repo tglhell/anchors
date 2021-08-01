@@ -77,9 +77,9 @@
 
 					<div class="contact-us-mid">
 						<div class="outer-img">
-							<div id="map">
-								<a href="https://map.kakao.com/?urlX=482045.0&urlY=1125380.0&name=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EC%84%9C%EA%B5%90%EB%8F%99%20395-121&map_type=TYPE_MAP&from=roughmap" target="_blank" class="btn-large-map pc">크게보기</a>
-								<a href="https://m.map.kakao.com/actions/searchView?q=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EC%84%9C%EA%B5%90%EB%8F%99%20395-121&wxEnc=LWNSQM&wyEnc=QNLSNRS&lvl=4#!/LWLMPP,QNLPOUN/map/bus" target="_blank" class="btn-large-map mo">크게보기</a>
+							<div id="daumRoughmapContainer1627811524192" class="root_daum_roughmap root_daum_roughmap_landing kmap">
+								<!-- <a href="http://kko.to/5eDzZjY4B" target="_blank" class="btn-large-map pc">크게보기</a>
+								<a href="https://m.map.kakao.com/actions/searchView?q=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EC%84%9C%EA%B5%90%EB%8F%99%20395-121&wxEnc=LWNSQM&wyEnc=QNLSNRS&lvl=4#!/LWLMPP,QNLPOUN/map/bus" target="_blank" class="btn-large-map mo">크게보기</a> -->
 							</div>
 						</div>
 						<div class="map-info-box">
@@ -129,8 +129,15 @@
 	</div>
 	<!-- e : wrap -->
 
-	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=79abf44f481a8c739067df916aa4408b"></script>
-	<script src="/anchors/assets/js/map.js"></script>
+	<script src="/anchors/assets/js/kmap.js"></script>
+	<script charset="UTF-8">
+		new daum.roughmap.Lander({
+			"timestamp" : "1627811524192",
+			"key" : "26tor",
+			"mapWidth" : "400",
+			"mapHeight" : "300"
+		}).render();
+	</script>
 </body>
 
 </html>

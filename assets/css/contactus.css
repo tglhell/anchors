@@ -358,30 +358,30 @@
 		line-height: 2.499999vw;
 	}
 
-	#map {
+	.kmap {
 		height: 22.053571vw;
 	}
 
-	#map:after {
+	.kmap:after {
 		font-size: 2.142857vw;
 		line-height: 2.857143vw;
 	}
 }
 
 @media (max-width: 767px) {
-	#map:before {
+	.kmap:before {
 		content: none;
 	}
 
-	#map:after {
+	.kmap:after {
 		content: none;
 	}
 
-	#map .btn-large-map.pc {
+	.kmap .btn-large-map.pc {
 		display: none;
 	}
 
-	#map .btn-large-map.mo {
+	.kmap .btn-large-map.mo {
 		display: block;
 	}
 
