@@ -121,6 +121,11 @@ jQuery.event.add(window, 'load', function () {
 		irInsert();
 	}, 50);
 
+	// $('.btn-reset').on('click', function () {
+	// 	$('.review-filter-form').load(location.href + ' .review-filter-cont');
+	// 	dateInp ();
+	// });
+
 	// Opinion to be excluded from the design side
 	// if (winWid > 767) {
 	// 	$('<div class="mouse">').appendTo('body');
